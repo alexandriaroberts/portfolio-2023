@@ -6,5 +6,6 @@ export const theme = {
   colors: {
     text: '#223A31',
     background: '#F2D5B2',
+    primary: '#FF9A19',
   },
 };

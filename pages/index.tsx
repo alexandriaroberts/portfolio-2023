@@ -2,8 +2,9 @@
 /** @jsx jsx */
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
-import { TimelineLite, TweenMax, Back, Bezier } from 'gsap';
+import { Bezier } from 'gsap';
 import { Container } from '../components/Container';
+
 export default function Home() {
   return (
     <Container>
