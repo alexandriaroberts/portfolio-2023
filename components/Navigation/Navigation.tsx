@@ -1,17 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
+// TODO: Find a way to remove these imports with jsx
 /** @jsx jsx */
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
 import { Container } from '../Container';
 import { NavLink } from './NavLink';
-import React from 'react';
 
 export const Navigation = () => (
   <Container>
     <nav
       sx={{
         display: 'grid',
-        gridTemplateColumns: '60px 1fr',
+        gridTemplateColumns: '60fr 320fr 50fr',
         justifyContent: 'center',
         mt: '80px',
       }}
@@ -26,7 +26,7 @@ export const Navigation = () => (
           gap: '32px',
         }}
       >
-        <NavLink href='/about' target='_self' sx={{}}>
+        <NavLink href='/about' target='_self'>
           About
         </NavLink>
         <NavLink href='/experience' target='_self'>
@@ -34,12 +34,16 @@ export const Navigation = () => (
         </NavLink>
       </div>
     </nav>
+    {
+      // TODO: Alternative to current mobile navigation
+    }
     <div
       sx={{
         position: 'absolute',
         right: '-40px',
         top: '-90px',
         transform: 'rotate(-140deg)',
+        display: ['none', null, 'inline-block'],
       }}
     >
       <img src='../orange-tree.png' alt='' sx={{ width: '306px' }} />

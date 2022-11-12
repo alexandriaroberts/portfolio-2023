@@ -26,7 +26,7 @@ export const NavLink = ({
       className={className}
       sx={{
         fontSize: '22px',
-        fontFamily: 'Noto Serif',
+        fontFamily: 'body',
         fontStyle: 'medium',
         lineHeight: '30px',
         textDecoration: 'none',
@@ -49,25 +49,23 @@ export const NavLink = ({
           transition: 'transform .3s ease, opacity .3s ease',
         },
         '&:hover': {
-          textShadow: '0px 0px 16px primary',
           transition: 'all 0.3s ease',
           '&::after': {
             display: 'inline',
             transform: 'translate3d(0, 100%, 0)',
-            boxShadow: '0px 0px 8px primary',
+            boxShadow: `0px 0px 8px ${theme.colors.primary}`,
           },
         },
         '&:visited, &:active, &:focus': {
           color: 'text',
-
-          //   color: 'rgba(255, 255, 255, 0.72)',
+          opacity: '80%',
           transition: 'all 0.3s ease',
-          //   '&::after': {
-          //     backgroundColor: 'rgba(111, 76, 255, 0.72)',
-          //   },
+          '&::after': {
+            backgroundColor: 'primary',
+          },
         },
         '&:visited:hover, &:active:hover, &:focus:hover': {
-          //   color: '#FFFFFF',
+          color: 'text',
           transition: 'all 0.3s ease',
           '&::after': {
             transform: 'translate3d(0, 100%, 0)',

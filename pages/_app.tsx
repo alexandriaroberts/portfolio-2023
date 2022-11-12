@@ -11,11 +11,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name='viewport' content='width=device-width, user-scalable=no' />
-        <link
-          rel='icon'
-          type='image/png'
-          href='https://res.cloudinary.com/dv3lue3qa/image/upload/v1668069764/heart.svg'
-        />
       </Head>
       <DefaultSeo {...defaultSEO} />
       <ThemeProvider theme={theme}>
