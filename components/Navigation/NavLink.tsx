@@ -43,7 +43,7 @@ export const NavLink = ({
           backgroundColor: 'primary',
           position: 'absolute',
           left: 0,
-          bottom: '30px',
+          bottom: '-5px',
           opacity: 1,
           transform: 'translate3d(0, 0, 0)',
           transition: 'transform .3s ease, opacity .3s ease',

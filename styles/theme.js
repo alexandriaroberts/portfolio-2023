@@ -8,4 +8,5 @@ export const theme = {
     background: '#F2D5B2',
     primary: '#FF9A19',
   },
+  breakpoints: ['641px', '749px', '1024px', '1288px'],
 };

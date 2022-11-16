@@ -12,6 +12,7 @@ export const Navigation = () => (
       sx={{
         display: 'grid',
         gridTemplateColumns: '60fr 320fr 50fr',
+        alignItems: 'center',
         justifyContent: 'center',
         mt: '80px',
       }}
@@ -40,13 +41,29 @@ export const Navigation = () => (
     <div
       sx={{
         position: 'absolute',
-        right: '-40px',
-        top: '-90px',
-        transform: 'rotate(-140deg)',
-        display: ['none', null, 'inline-block'],
+        left: 0,
+        top: 0,
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden',
+        zIndex: '-1',
       }}
     >
-      <img src='../orange-tree.png' alt='' sx={{ width: '306px' }} />
+      <div
+        sx={{
+          position: 'absolute',
+          right: '-40px',
+          top: '-90px',
+          transform: 'rotate(-132deg)',
+          width: '100%',
+          minWidth: '206px',
+          maxWidth: '306px',
+          aspectRatio: '570 / 799',
+          backgroundImage: `url('../orange-tree.png')`,
+          backgroundSize: '100% 100%',
+          display: ['none', null, 'block'],
+        }}
+      />
     </div>
   </Container>
 );
