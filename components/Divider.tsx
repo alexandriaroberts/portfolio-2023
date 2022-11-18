@@ -8,6 +8,7 @@ import { HTMLAttributes } from 'react';
 export type DividerProps = {
   color?: 'text' | 'primary';
   width?: string;
+  height?: string;
 } & Omit<HTMLAttributes<HTMLHRElement>, 'children'>;
 
 /**
@@ -16,6 +17,7 @@ export type DividerProps = {
 export const Divider = ({
   color = 'text',
   width = '100%',
+  height = '1px',
   className,
   ...props
 }: DividerProps) => {
@@ -24,9 +26,8 @@ export const Divider = ({
       className={classnames(className)}
       sx={{
         display: 'flex',
-        alignItems: 'center',
         width: width,
-        height: '1px',
+        height: height,
         gap: '1px',
         color: color,
       }}
@@ -37,7 +38,8 @@ export const Divider = ({
           flex: 1,
           borderWidth: '1px',
           borderStyle: 'solid',
-          borderTop: 'currentColor',
+          borderTop: height === '1px' ? 'currentColor' : 'transparent',
+          borderLeft: height !== '1px' ? 'currentColor' : 'transparent',
         }}
       />
     </div>

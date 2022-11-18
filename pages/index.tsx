@@ -45,7 +45,29 @@ export default function Home() {
             usability and love learning new tech.
           </p>
         </div>
-        <div sx={{ gridColumn: 2 }}>
+        <div sx={{ gridColumn: 2, position: 'relative' }}>
+          <Divider
+            width='1px'
+            height='130%'
+            sx={{
+              position: 'absolute',
+              top: '-25px',
+              right: '120px',
+              zIndex: -1,
+            }}
+          />
+          <Divider
+            color='primary'
+            width='1px'
+            height='110%'
+            sx={{
+              position: 'absolute',
+              top: '50px',
+              right: '220px',
+              zIndex: -1,
+            }}
+          />
+
           <div
             sx={{ maxWidth: '580px', height: '100%', mt: '164px', mr: '120px' }}
           >
