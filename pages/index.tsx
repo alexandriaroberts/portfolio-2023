@@ -4,22 +4,22 @@
 import { jsx } from 'theme-ui';
 import { Container } from '../components/Container';
 import { Divider } from '../components/Divider';
+import { H1, H2, P } from '../components/Typography';
 
 export default function Home() {
   return (
     <Container>
       <div
-        sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', mt: '164px' }}
+        sx={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          mt: '164px',
+          gap: '64px',
+        }}
       >
         <div sx={{ gridColumn: 1 }}>
-          <h1
+          <H1
             sx={{
-              fontFamily: 'Lora, serif',
-              fontSize: '78px',
-              fontStyle: 'normal',
-              fontWeight: '200',
-              lineHeight: '78px',
-              letterSpacing: '2px',
               mb: '20px',
             }}
           >
@@ -28,31 +28,32 @@ export default function Home() {
             </span>
             <br />
             roberts
-          </h1>
+          </H1>
           <Divider width='80%' sx={{ mt: '20px' }} />
-          <p
+          <P
             sx={{
-              fontFamily: 'Noto Serif',
-              fontSize: '20px',
-              fontStyle: 'normal',
-              fontWeight: '500',
-              lineHeight: '37px',
-              letterSpacing: '2px',
-              mb: '20px',
+              my: '20px',
             }}
           >
             Is an UI Engineer with strong skills in UI design and focus on
             usability and love learning new tech.
-          </p>
+          </P>
         </div>
-        <div sx={{ gridColumn: 2, position: 'relative' }}>
+        <div
+          sx={{
+            gridColumn: 2,
+            display: 'grid',
+            justifySelf: 'end',
+            position: 'relative',
+          }}
+        >
           <Divider
             width='1px'
             height='130%'
             sx={{
               position: 'absolute',
               top: '-25px',
-              right: '120px',
+              right: '0px',
               zIndex: -1,
             }}
           />
@@ -63,14 +64,12 @@ export default function Home() {
             sx={{
               position: 'absolute',
               top: '50px',
-              right: '220px',
+              right: '120px',
               zIndex: -1,
             }}
           />
 
-          <div
-            sx={{ maxWidth: '580px', height: '100%', mt: '164px', mr: '120px' }}
-          >
+          <div sx={{ maxWidth: '580px', height: '100%', mt: '164px' }}>
             <img
               src='../profile.jpg'
               alt='Head Shot of Lexie'
@@ -79,6 +78,25 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <main>
+        <H2 sx={{ position: 'relative' }}>
+          About <span sx={{ width: '108px', height: '138px', bg: 'primary' }} />{' '}
+          me
+        </H2>
+        <P>
+          Is a A UI Engineer with strong skills in UI design skills and focus on
+          usability and learning new skills.
+        </P>
+        <P>
+          Is a A UI Engineer with strong skills in UI design skills and focus on
+          usability and learning new skills. Is a A UI Engineer with strong
+          skills in UI design skills and focus on usability and learning new
+          skills. Is a A UI Engineer with strong skills in UI design skills and
+          focus on usability and learning new skills. Is a A UI Engineer with
+          strong skills in UI design skills and focus on usability and learning
+          new skills.
+        </P>
+      </main>
     </Container>
   );
 }
