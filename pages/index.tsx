@@ -78,24 +78,40 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <main>
-        <H2 sx={{ position: 'relative' }}>
-          About <span sx={{ width: '108px', height: '138px', bg: 'primary' }} />{' '}
+      <main sx={{ mt: '24px' }}>
+        <H2 sx={{ position: 'relative', mt: '164px' }}>
+          About{' '}
+          <span
+            sx={{
+              display: 'inline-block',
+              position: 'absolute',
+              top: '40%',
+              left: '29%',
+              width: '108px',
+              height: '72px',
+              transform: 'translate(-50%, -50%)',
+              borderRadius: '250px 250px 0 0',
+              bg: 'primary',
+              zIndex: '-1',
+            }}
+          />
           me
         </H2>
-        <P>
-          Is a A UI Engineer with strong skills in UI design skills and focus on
-          usability and learning new skills.
-        </P>
-        <P>
-          Is a A UI Engineer with strong skills in UI design skills and focus on
-          usability and learning new skills. Is a A UI Engineer with strong
-          skills in UI design skills and focus on usability and learning new
-          skills. Is a A UI Engineer with strong skills in UI design skills and
-          focus on usability and learning new skills. Is a A UI Engineer with
-          strong skills in UI design skills and focus on usability and learning
-          new skills.
-        </P>
+        <div sx={{ maxWidth: '840px', m: '0 auto' }}>
+          <P>
+            Is a A UI Engineer with strong skills in UI design skills and focus
+            on usability and learning new skills.
+          </P>
+          <P>
+            Is a A UI Engineer with strong skills in UI design skills and focus
+            on usability and learning new skills. Is a A UI Engineer with strong
+            skills in UI design skills and focus on usability and learning new
+            skills. Is a A UI Engineer with strong skills in UI design skills
+            and focus on usability and learning new skills. Is a A UI Engineer
+            with strong skills in UI design skills and focus on usability and
+            learning new skills.
+          </P>
+        </div>
       </main>
     </Container>
   );
