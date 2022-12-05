@@ -5,7 +5,7 @@
 import { jsx } from 'theme-ui';
 
 export type SocialProps = {
-  width?: string;
+  width?: [string];
   height?: string;
   color?: string;
   hoverColor?: string;
@@ -13,7 +13,7 @@ export type SocialProps = {
 };
 
 export const Socials = ({
-  width = '30px',
+  width = ['30px'],
   height = '30px',
   color = 'primary',
   hoverColor = 'secondaryOrange',
@@ -42,14 +42,22 @@ export const Socials = ({
     }}
     {...props}
   >
-    <a href='' target='_blank' rel='noopener noreferrer'>
+    <a
+      href='https://github.com/alexandriaroberts'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       <svg viewBox='0 0 16 16'>
         <title>Github</title>
         <use xlinkHref='../images/sprite.svg#github'></use>
       </svg>
     </a>
 
-    <a href='' target='_blank' rel='noopener noreferrer'>
+    <a
+      href='mailto:iamlexieonearth@gmail.com'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       <svg viewBox='0 0 13 14'>
         <title>Email</title>
         <use xlinkHref='../images/sprite.svg#email'></use>
@@ -67,7 +75,11 @@ export const Socials = ({
       </svg>
     </a>
 
-    <a href='' target='_blank' rel='noopener noreferrer'>
+    <a
+      href='https://codepen.io/iamlexieonearth'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       <svg viewBox='0 0 100 100'>
         <title>Codepen</title>
         <use xlinkHref='../images/sprite.svg#codepen'></use>

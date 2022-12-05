@@ -10,9 +10,9 @@ export const Footer = () => (
   <footer
     sx={{
       position: 'relative',
-      height: '604px',
+      height: ['408px', null, '604px'],
       bg: 'secondaryOrange',
-      mt: '164px',
+      mt: ['104px', '164px'],
     }}
   >
     <div
@@ -33,11 +33,11 @@ export const Footer = () => (
           transform: 'rotate(132deg)',
           width: '100%',
           minWidth: '206px',
-          maxWidth: '306px',
+          maxWidth: ['223px', '306px'],
           aspectRatio: '570 / 799',
           backgroundImage: `url('../orange-tree.png')`,
           backgroundSize: '100% 100%',
-          display: ['none', null, 'block'],
+          display: 'block',
         }}
       />
       <div
@@ -47,12 +47,12 @@ export const Footer = () => (
           bottom: '-100px',
           transform: 'rotate(-60deg)',
           width: '100%',
-          minWidth: '206px',
-          maxWidth: '306px',
+          minWidth: [0, '283px', '206px'],
+          maxWidth: [0, '283px', '306px'],
           aspectRatio: '570 / 799',
           backgroundImage: `url('../orange-tree.png')`,
           backgroundSize: '100% 100%',
-          display: ['none', null, 'block'],
+          display: ['none', 'block'],
         }}
       />
     </div>
@@ -68,11 +68,12 @@ export const Footer = () => (
       <H3>You can find me on</H3>
 
       <Socials
-        width='60px'
+        //TODO: Fix this error
+        width={['40px', '60px']}
         height='60px'
         color='text'
         hoverColor='currentColor'
-        sx={{ zIndex: '4', gap: '48px' }}
+        sx={{ zIndex: '4', gap: ['32px', '48px'] }}
       />
     </div>
   </footer>

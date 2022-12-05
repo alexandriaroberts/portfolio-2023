@@ -15,10 +15,10 @@ export const H1 = ({ children, className, ...props }: TypographyProps) => (
     className={classnames(className)}
     sx={{
       fontFamily: 'Lora, serif',
-      fontSize: '80px',
+      fontSize: ['36px', null, '48px', '80px'],
       fontStyle: 'normal',
       fontWeight: '200',
-      lineHeight: '80px',
+      lineHeight: ['36px', null, '48px', '80px'],
       letterSpacing: '2px',
     }}
     {...props}
@@ -32,10 +32,10 @@ export const H2 = ({ children, className, ...props }: TypographyProps) => (
     className={classnames(className)}
     sx={{
       fontFamily: 'Lora, serif',
-      fontSize: '74px',
+      fontSize: ['26px', null, '38px', '74px'],
       fontStyle: 'normal',
       fontWeight: '200',
-      lineHeight: '78px',
+      lineHeight: ['28px', null, '40px', '78px'],
       letterSpacing: '2px',
       mt: 0,
       mb: '48px',
@@ -51,10 +51,10 @@ export const H3 = ({ children, className, ...props }: TypographyProps) => (
     className={classnames(className)}
     sx={{
       fontFamily: 'Lora, serif',
-      fontSize: '74px',
+      fontSize: ['26px', null, '38px', '74px'],
       fontStyle: 'normal',
       fontWeight: '200',
-      lineHeight: '78px',
+      lineHeight: ['28px', null, '40px', '78px'],
       letterSpacing: '2px',
       mb: '48px',
     }}
@@ -69,10 +69,10 @@ export const P = ({ children, className, ...props }: TypographyProps) => (
     className={classnames(className)}
     sx={{
       fontFamily: 'Noto Serif',
-      fontSize: '20px',
+      fontSize: ['16px', null, '20px'],
       fontStyle: 'normal',
       fontWeight: '500',
-      lineHeight: '37px',
+      lineHeight: ['28px', null, '37px'],
       letterSpacing: '2px',
       mb: '54px',
     }}

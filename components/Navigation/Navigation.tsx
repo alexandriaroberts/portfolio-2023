@@ -22,13 +22,13 @@ export const Navigation = ({ className, ...props }: NavigationProps) => (
       }}
     >
       <a href='\'>
-        <img src='../heart.svg' alt='home' />
+        <img src='../heart.svg' alt='home' sx={{ width: ['40px', '100%'] }} />
       </a>
       <div
         sx={{
           justifySelf: 'center',
           display: 'flex',
-          gap: '32px',
+          gap: ['24px', '32px'],
         }}
       >
         <NavLink href='/about' target='_self'>

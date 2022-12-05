@@ -13,8 +13,8 @@ export default function Home() {
       <div
         sx={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          mt: '164px',
+          gridTemplateColumns: ['1fr', null, '1fr 1fr'],
+          mt: ['104px', '164px'],
           gap: '64px',
         }}
       >
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
         <div
           sx={{
-            gridColumn: 2,
+            gridColumn: [1, 2],
             display: 'grid',
             justifySelf: 'end',
             position: 'relative',
@@ -65,17 +65,19 @@ export default function Home() {
             height='110%'
             sx={{
               position: 'absolute',
-              top: '50px',
+              top: ['0', '50px'],
               right: '120px',
               zIndex: -1,
             }}
           />
 
-          <div sx={{ maxWidth: '580px', height: '100%', mt: '164px' }}>
+          <div
+            sx={{ maxWidth: '580px', height: '100%', mt: ['32px', '164px'] }}
+          >
             <img
               src='../profile.jpg'
               alt='Head Shot of Lexie'
-              sx={{ width: '100%', height: 'auto' }}
+              sx={{ width: ['255px', null, '100%'], height: 'auto' }}
             />
           </div>
         </div>
@@ -90,8 +92,8 @@ export default function Home() {
                 position: 'absolute',
                 top: '40%',
                 left: '50%',
-                width: '108px',
-                height: '72px',
+                width: ['50px', null, '66px', '108px'],
+                height: ['36px', null, '46px', '72px'],
                 transform: 'translate(-50%, -50%)',
                 borderRadius: '250px 250px 0 0',
                 bg: 'secondaryOrange',

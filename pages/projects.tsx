@@ -4,10 +4,10 @@ import { jsx } from 'theme-ui';
 
 import { Container } from '../components/Container';
 
-export default function About() {
+export default function Projects() {
   return (
     <Container>
-      <h1>About</h1>
+      <h1>Projects</h1>
     </Container>
   );
 }
