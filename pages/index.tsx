@@ -15,7 +15,7 @@ export default function Home() {
           display: 'grid',
           gridTemplateColumns: ['1fr', null, '1fr 1fr'],
           mt: ['104px', '164px'],
-          gap: '64px',
+          gap: ['16px', '64px'],
         }}
       >
         <div sx={{ gridColumn: 1 }}>
@@ -62,10 +62,10 @@ export default function Home() {
           <Divider
             color='primary'
             width='1px'
-            height='110%'
+            height='107%'
             sx={{
               position: 'absolute',
-              top: ['0', '50px'],
+              top: ['0', '60px'],
               right: '120px',
               zIndex: -1,
             }}
@@ -77,7 +77,11 @@ export default function Home() {
             <img
               src='../profile.jpg'
               alt='Head Shot of Lexie'
-              sx={{ width: ['255px', null, '100%'], height: 'auto' }}
+              sx={{
+                width: ['255px', null, '100%'],
+                maxWidth: '537px',
+                height: 'auto',
+              }}
             />
           </div>
         </div>
