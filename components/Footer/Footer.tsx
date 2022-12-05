@@ -1,10 +1,79 @@
 /** @jsx jsx */
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
-
+import { H3 } from '../Typography';
+import { Socials } from '../Socials';
 /**
  * Main `Footer` component.
  */
-export const Footer = Object.assign({
-  Marketing: () => <div>Footer</div>,
-});
+export const Footer = () => (
+  <footer
+    sx={{
+      position: 'relative',
+      height: '604px',
+      bg: 'secondaryOrange',
+      mt: '164px',
+    }}
+  >
+    <div
+      sx={{
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden',
+      }}
+    >
+      <div
+        sx={{
+          position: 'absolute',
+          left: '-140px',
+          top: '-120px',
+          transform: 'rotate(132deg)',
+          width: '100%',
+          minWidth: '206px',
+          maxWidth: '306px',
+          aspectRatio: '570 / 799',
+          backgroundImage: `url('../orange-tree.png')`,
+          backgroundSize: '100% 100%',
+          display: ['none', null, 'block'],
+        }}
+      />
+      <div
+        sx={{
+          position: 'absolute',
+          right: '-140px',
+          bottom: '-100px',
+          transform: 'rotate(-60deg)',
+          width: '100%',
+          minWidth: '206px',
+          maxWidth: '306px',
+          aspectRatio: '570 / 799',
+          backgroundImage: `url('../orange-tree.png')`,
+          backgroundSize: '100% 100%',
+          display: ['none', null, 'block'],
+        }}
+      />
+    </div>
+    <div
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        height: '100%',
+      }}
+    >
+      <H3>You can find me on</H3>
+
+      <Socials
+        width='60px'
+        height='60px'
+        color='text'
+        hoverColor='currentColor'
+        sx={{ zIndex: '4', gap: '48px' }}
+      />
+    </div>
+  </footer>
+);

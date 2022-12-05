@@ -37,12 +37,31 @@ export const H2 = ({ children, className, ...props }: TypographyProps) => (
       fontWeight: '200',
       lineHeight: '78px',
       letterSpacing: '2px',
+      mt: 0,
       mb: '48px',
     }}
     {...props}
   >
     {children}
   </h2>
+);
+
+export const H3 = ({ children, className, ...props }: TypographyProps) => (
+  <h3
+    className={classnames(className)}
+    sx={{
+      fontFamily: 'Lora, serif',
+      fontSize: '74px',
+      fontStyle: 'normal',
+      fontWeight: '200',
+      lineHeight: '78px',
+      letterSpacing: '2px',
+      mb: '48px',
+    }}
+    {...props}
+  >
+    {children}
+  </h3>
 );
 
 export const P = ({ children, className, ...props }: TypographyProps) => (

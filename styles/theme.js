@@ -1,4 +1,29 @@
 export const theme = {
+  '*, *::before, *::after': {
+    boxSizing: 'border-box',
+    position: 'relative', // Make absolutely positioned elements relative to their parent by default
+    margin: 0,
+    minWidth: 0, // Prevent flex items from overflowing horizontally
+    minHeight: 0, // Prevent flex items from overflowing vertically
+    padding: 0,
+    border: 0,
+    borderRadius: 0,
+    backgroundColor: 'transparent',
+    backgroundImage: 'none',
+    backgroundPosition: 'center center', // Normally defaults to 0% 0%
+    backgroundRepeat: 'no-repeat', // Normally defaults to `repeat`
+  },
+  [`
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+  `]: {
+    fontWeight: 'inherit',
+    fontSize: 'inherit',
+  },
   fonts: {
     body: 'Noto Serif, serif',
     heading: 'Lora, Noto-serif',
@@ -7,6 +32,7 @@ export const theme = {
     text: '#223A31',
     background: '#F2D5B2',
     primary: '#F18019',
+    secondaryOrange: '#FF9A19',
   },
   breakpoints: ['641px', '749px', '1024px', '1288px'],
 };

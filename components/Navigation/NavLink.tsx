@@ -9,21 +9,13 @@ export type NavLinkProps = {
   href: string;
   target?: string;
   children: ReactNode | string;
-  className?: string;
 };
 
-export const NavLink = ({
-  href,
-  target,
-  children,
-  className,
-  ...props
-}: NavLinkProps) => {
+export const NavLink = ({ href, target, children, ...props }: NavLinkProps) => {
   return (
     <a
       href={href}
       target={target || '_blank'}
-      className={className}
       sx={{
         fontSize: '22px',
         fontFamily: 'body',

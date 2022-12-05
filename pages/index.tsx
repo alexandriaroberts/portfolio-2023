@@ -5,6 +5,7 @@ import { jsx } from 'theme-ui';
 import { Container } from '../components/Container';
 import { Divider } from '../components/Divider';
 import { H1, H2, P } from '../components/Typography';
+import { Socials } from '../components/Socials';
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
             Is an UI Engineer with strong skills in UI design and focus on
             usability and love learning new tech.
           </P>
+          <Socials sx={{ mt: '24px' }} />
         </div>
         <div
           sx={{
@@ -78,24 +80,26 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <main sx={{ mt: '24px' }}>
-        <H2 sx={{ position: 'relative', mt: '164px' }}>
+      <main sx={{ mt: '164px' }}>
+        <H2>
           About{' '}
-          <span
-            sx={{
-              display: 'inline-block',
-              position: 'absolute',
-              top: '40%',
-              left: '29%',
-              width: '108px',
-              height: '72px',
-              transform: 'translate(-50%, -50%)',
-              borderRadius: '250px 250px 0 0',
-              bg: 'primary',
-              zIndex: '-1',
-            }}
-          />
-          me
+          <span sx={{ position: 'relative' }}>
+            <span
+              sx={{
+                display: 'inline-block',
+                position: 'absolute',
+                top: '40%',
+                left: '50%',
+                width: '108px',
+                height: '72px',
+                transform: 'translate(-50%, -50%)',
+                borderRadius: '250px 250px 0 0',
+                bg: 'secondaryOrange',
+                zIndex: '-1',
+              }}
+            />
+            me
+          </span>
         </H2>
         <div sx={{ maxWidth: '840px', m: '0 auto' }}>
           <P>

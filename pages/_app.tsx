@@ -5,6 +5,7 @@ import { theme } from '../styles/theme';
 import { DefaultSeo } from 'next-seo';
 import defaultSEO from '../next-seo';
 import { Navigation } from '../components/Navigation';
+import { Footer } from '../components/Footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <ThemeProvider theme={theme}>
         <Navigation />
         <Component {...pageProps} />
+        <Footer></Footer>
       </ThemeProvider>
     </>
   );

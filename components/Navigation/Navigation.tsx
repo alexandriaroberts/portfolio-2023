@@ -6,8 +6,12 @@ import { jsx } from 'theme-ui';
 import { Container } from '../Container';
 import { NavLink } from './NavLink';
 
-export const Navigation = () => (
-  <Container>
+export type NavigationProps = {
+  className?: string;
+};
+
+export const Navigation = ({ className, ...props }: NavigationProps) => (
+  <Container {...props}>
     <nav
       sx={{
         display: 'grid',
