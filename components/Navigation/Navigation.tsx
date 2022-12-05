@@ -31,8 +31,8 @@ export const Navigation = ({ className, ...props }: NavigationProps) => (
           gap: ['24px', '32px'],
         }}
       >
-        <NavLink href='/about' target='_self'>
-          About
+        <NavLink href='/projects' target='_self'>
+          Projects
         </NavLink>
         <NavLink href='/experience' target='_self'>
           Experience
