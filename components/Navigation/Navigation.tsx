@@ -12,7 +12,7 @@ export type NavigationProps = {
 };
 
 export const Navigation = ({ className, ...props }: NavigationProps) => (
-  <Container {...props}>
+  <Container {...props} sx={{ overflow: 'hidden' }}>
     <nav
       sx={{
         display: 'grid',
@@ -50,8 +50,8 @@ export const Navigation = ({ className, ...props }: NavigationProps) => (
         top: 0,
         width: '100%',
         height: '100%',
-        overflow: 'hidden',
         zIndex: '-1',
+        overflow: 'hidden',
       }}
     >
       <div
@@ -67,6 +67,7 @@ export const Navigation = ({ className, ...props }: NavigationProps) => (
           backgroundImage: `url('../orange-tree.png')`,
           backgroundSize: '100% 100%',
           display: ['none', null, 'block'],
+          overflow: 'hidden',
         }}
       />
     </div>
