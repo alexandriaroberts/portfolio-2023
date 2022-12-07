@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <Container>
       <div sx={{ mt: ['104px', '164px'] }}>
-        <H2 sx={{ position: 'relative' }}>
+        <H2>
           Projects
           <span
             sx={{

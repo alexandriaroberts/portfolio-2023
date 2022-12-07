@@ -26,7 +26,6 @@ export const NavLink = ({ href, target, children, ...props }: NavLinkProps) => {
         color: 'text',
         transition: 'all 0.3s ease',
         whiteSpace: 'nowrap',
-        position: 'relative',
         display: 'inline',
         cursor: 'pointer',
         '&::after': {

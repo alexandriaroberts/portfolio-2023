@@ -11,7 +11,6 @@ import { Socials } from '../Socials';
 export const Footer = () => (
   <footer
     sx={{
-      position: 'relative',
       height: ['408px', null, '604px'],
       bg: 'secondaryOrange',
       mt: ['104px', '164px'],

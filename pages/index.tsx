@@ -47,7 +47,6 @@ export default function Home() {
             gridColumn: [1, 2],
             display: 'grid',
             justifySelf: 'end',
-            position: 'relative',
           }}
         >
           <Divider
@@ -90,7 +89,7 @@ export default function Home() {
       <main sx={{ mt: '164px' }}>
         <H2>
           About{' '}
-          <span sx={{ position: 'relative' }}>
+          <span>
             <span
               sx={{
                 display: 'inline-block',
