@@ -1,8 +1,10 @@
 /** @jsx jsx */
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
+
 import { H3 } from '../Typography';
 import { Socials } from '../Socials';
+
 /**
  * Main `Footer` component.
  */

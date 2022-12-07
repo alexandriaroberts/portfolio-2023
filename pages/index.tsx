@@ -2,6 +2,7 @@
 /** @jsx jsx */
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
+
 import { Container } from '../components/Container';
 import { Divider } from '../components/Divider';
 import { H1, H2, P } from '../components/Typography';

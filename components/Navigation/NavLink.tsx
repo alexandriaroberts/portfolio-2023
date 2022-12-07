@@ -3,6 +3,7 @@
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
 import { ReactNode } from 'react';
+
 import { theme } from '../../styles/theme';
 
 export type NavLinkProps = {

@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'theme-ui';
+
 import { theme } from '../styles/theme';
+
 import { DefaultSeo } from 'next-seo';
 import defaultSEO from '../next-seo';
+
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 
