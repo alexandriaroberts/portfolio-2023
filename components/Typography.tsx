@@ -74,7 +74,23 @@ export const P = ({ children, className, ...props }: TypographyProps) => (
       fontWeight: '500',
       lineHeight: ['28px', null, '37px'],
       letterSpacing: '2px',
-      mb: '54px',
+    }}
+    {...props}
+  >
+    {children}
+  </p>
+);
+
+export const P16 = ({ children, className, ...props }: TypographyProps) => (
+  <p
+    className={classnames(className)}
+    sx={{
+      fontFamily: 'Noto Serif',
+      fontSize: ['14px', null, '16px'],
+      fontStyle: 'normal',
+      fontWeight: '500',
+      lineHeight: ['18px', null, '28px'],
+      letterSpacing: '2px',
     }}
     {...props}
   >
