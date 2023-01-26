@@ -86,11 +86,11 @@ export default function Projects() {
       </div>
       <div
         sx={{
-          height: ['408px', null, '604px'],
+          height: ['auto', null, '604px'],
           mt: ['104px', '164px'],
           position: 'absolute',
           left: 0,
-          bottom: '20%',
+          bottom: ['14%', '20%'],
           width: '100%',
           overflow: 'hidden',
           bg: 'text',
@@ -100,7 +100,7 @@ export default function Projects() {
           sx={{
             position: 'absolute',
             top: '-27%',
-            left: '35%',
+            left: ['27%', null, null, '35%'],
             width: '100%',
             minWidth: [0, '283px', '206px'],
             maxWidth: [0, '283px', '306px'],
@@ -112,35 +112,46 @@ export default function Projects() {
         />
         <div
           sx={{
-            height: '50%',
+            height: ['auto', '50%'],
             display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gridTemplateRows: '1fr 1fr',
+            gridTemplateColumns: ['1fr', null, '1fr 1fr'],
+            gridTemplateRows: ['auto', null, '1fr 1fr'],
+            gridGap: '64px',
             alignContent: 'center',
-            marginLeft: '64px',
-            mt: '204px',
+            mx: '64px',
+            mt: ['64px', null, '204px'],
             mb: '64px',
           }}
         >
-          <div sx={{ color: 'primary' }}>
+          <div
+            sx={{
+              color: 'primary',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '16px',
+            }}
+          >
             <H4>React Form</H4>
-            <P16>React interactive form</P16>
-            <Divider color='primary' width='75%' />
+            <P16>
+              React interactive form, Info:Helped build this new app while we
+              started from scratch,
+            </P16>
+            <Divider color='primary' />
           </div>
           <div sx={{ color: 'primary' }}>
             <H4>React Form</H4>
             <P16>React interactive form</P16>
-            <Divider color='primary' width='75%' />
+            <Divider color='primary' />
           </div>
           <div sx={{ color: 'primary' }}>
             <H4>React Form</H4>
             <P16>React interactive form</P16>
-            <Divider color='primary' width='75%' />
+            <Divider color='primary' />
           </div>
           <div sx={{ color: 'primary' }}>
             <H4>React Form</H4>
             <P16>React interactive form</P16>
-            <Divider color='primary' width='75%' />
+            <Divider color='primary' />
           </div>
         </div>
       </div>
