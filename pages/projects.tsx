@@ -86,11 +86,11 @@ export default function Projects() {
       </div>
       <div
         sx={{
-          height: ['auto', null, '604px'],
+          height: 'auto',
           mt: ['104px', '164px'],
           position: 'absolute',
           left: 0,
-          bottom: ['14%', '20%'],
+          bottom: ['14%', '21%'],
           width: '100%',
           overflow: 'hidden',
           bg: 'text',
@@ -112,7 +112,7 @@ export default function Projects() {
         />
         <div
           sx={{
-            height: ['auto', '50%'],
+            // height: ['auto'],
             display: 'grid',
             gridTemplateColumns: ['1fr', null, '1fr 1fr'],
             gridTemplateRows: ['auto', null, '1fr 1fr'],
