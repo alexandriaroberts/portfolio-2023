@@ -23,7 +23,11 @@ export const Navigation = ({ className, ...props }: NavigationProps) => (
       }}
     >
       <a href='\'>
-        <img src='../heart.svg' alt='home' sx={{ width: ['40px', '60px'] }} />
+        <img
+          src='../heart.svg'
+          alt='home'
+          sx={{ width: ['40px', null, '60px'] }}
+        />
       </a>
       <div
         sx={{

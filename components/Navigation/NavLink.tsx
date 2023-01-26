@@ -18,7 +18,7 @@ export const NavLink = ({ href, target, children, ...props }: NavLinkProps) => {
       href={href}
       target={target || '_blank'}
       sx={{
-        fontSize: ['18px', '22px'],
+        fontSize: ['18px', null, '22px'],
         fontFamily: 'body',
         fontStyle: 'medium',
         lineHeight: '30px',

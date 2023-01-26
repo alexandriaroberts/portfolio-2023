@@ -64,6 +64,23 @@ export const H3 = ({ children, className, ...props }: TypographyProps) => (
   </h3>
 );
 
+export const H4 = ({ children, className, ...props }: TypographyProps) => (
+  <h3
+    className={classnames(className)}
+    sx={{
+      fontFamily: 'Lora, serif',
+      fontSize: ['16px', null, '20px'],
+      fontStyle: 'normal',
+      fontWeight: '500',
+      lineHeight: ['28px', null, '40px'],
+      letterSpacing: '2px',
+    }}
+    {...props}
+  >
+    {children}
+  </h3>
+);
+
 export const P = ({ children, className, ...props }: TypographyProps) => (
   <p
     className={classnames(className)}
