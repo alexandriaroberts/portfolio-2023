@@ -7,6 +7,7 @@ import { Container } from '../components/Container';
 import { Divider } from '../components/Divider';
 import { H1, H2, P } from '../components/Typography';
 import { Socials } from '../components/Socials';
+import { HeadingDecoration } from '../components/HeadingDecoration';
 
 export default function Home() {
   return (
@@ -90,20 +91,7 @@ export default function Home() {
         <H2>
           About{' '}
           <span>
-            <span
-              sx={{
-                display: 'inline-block',
-                position: 'absolute',
-                top: '40%',
-                left: '50%',
-                width: ['50px', null, '66px', '108px'],
-                height: ['36px', null, '46px', '72px'],
-                transform: 'translate(-50%, -50%)',
-                borderRadius: '250px 250px 0 0',
-                bg: 'secondaryOrange',
-                zIndex: '-1',
-              }}
-            />
+            <HeadingDecoration left={'50%'} />
             me
           </span>
         </H2>

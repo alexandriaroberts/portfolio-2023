@@ -7,6 +7,7 @@ import { H2, H4, P, P16 } from '../components/Typography';
 import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';
 import { Divider } from '../components/Divider';
+import { HeadingDecoration } from '../components/HeadingDecoration';
 
 export default function Projects() {
   return (
@@ -15,20 +16,7 @@ export default function Projects() {
         <H2>
           <span>
             Projects
-            <span
-              sx={{
-                display: 'inline-block',
-                position: 'absolute',
-                top: '40%',
-                left: ['85px', null, '120px', '240px'],
-                width: ['50px', null, '66px', '108px'],
-                height: ['36px', null, '46px', '72px'],
-                transform: 'translate(-50%, -50%)',
-                borderRadius: '250px 250px 0 0',
-                bg: 'secondaryOrange',
-                zIndex: '-1',
-              }}
-            />
+            <HeadingDecoration left={['85px', null, '120px', '240px']} />
           </span>
         </H2>
         <div
