@@ -65,20 +65,21 @@ export const H3 = ({ children, className, ...props }: TypographyProps) => (
 );
 
 export const H4 = ({ children, className, ...props }: TypographyProps) => (
-  <h3
+  <h4
     className={classnames(className)}
     sx={{
       fontFamily: 'Lora, serif',
-      fontSize: ['16px', null, '20px'],
+      fontSize: ['20px', null, '28px'],
       fontStyle: 'normal',
-      fontWeight: '500',
-      lineHeight: ['28px', null, '40px'],
+      fontWeight: '400',
+      lineHeight: ['28px', null, '36px'],
       letterSpacing: '2px',
+      color: 'primary',
     }}
     {...props}
   >
     {children}
-  </h3>
+  </h4>
 );
 
 export const P = ({ children, className, ...props }: TypographyProps) => (
@@ -113,4 +114,22 @@ export const P16 = ({ children, className, ...props }: TypographyProps) => (
   >
     {children}
   </p>
+);
+
+export const S20 = ({ children, className, ...props }: TypographyProps) => (
+  <span
+    className={classnames(className)}
+    sx={{
+      fontFamily: 'Lora',
+      fontSize: ['14px', null, '20px'],
+      fontStyle: 'italic',
+      fontWeight: '400',
+      lineHeight: ['16px', null, '26px'],
+      letterSpacing: '2px',
+      color: 'secondaryOrange',
+    }}
+    {...props}
+  >
+    {children}
+  </span>
 );
