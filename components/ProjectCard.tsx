@@ -2,7 +2,7 @@
 /** @jsx jsx */
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
-import { HTMLAttributes, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 import { P } from '../components/Typography';
 

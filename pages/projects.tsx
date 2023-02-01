@@ -8,6 +8,7 @@ import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';
 import { Divider } from '../components/Divider';
 import { HeadingDecoration } from '../components/HeadingDecoration';
+import { ProjectItem } from '../components/ProjectItem';
 
 export default function Projects() {
   return (
@@ -100,7 +101,6 @@ export default function Projects() {
         />
         <div
           sx={{
-            // height: ['auto'],
             display: 'grid',
             gridTemplateColumns: ['1fr', null, '1fr 1fr'],
             gridTemplateRows: ['auto', null, '1fr 1fr'],
@@ -111,36 +111,25 @@ export default function Projects() {
             mb: '64px',
           }}
         >
-          <div
-            sx={{
-              color: 'primary',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '16px',
-            }}
-          >
+          <ProjectItem href=''>
             <H4>React Form</H4>
             <P16>
-              React interactive form, Info:Helped build this new app while we
+              React interactive form, Info: Helped build this new app while we
               started from scratch,
             </P16>
-            <Divider color='primary' />
-          </div>
-          <div sx={{ color: 'primary' }}>
+          </ProjectItem>
+          <ProjectItem href=''>
             <H4>React Form</H4>
             <P16>React interactive form</P16>
-            <Divider color='primary' />
-          </div>
-          <div sx={{ color: 'primary' }}>
+          </ProjectItem>
+          <ProjectItem href=''>
             <H4>React Form</H4>
             <P16>React interactive form</P16>
-            <Divider color='primary' />
-          </div>
-          <div sx={{ color: 'primary' }}>
+          </ProjectItem>
+          <ProjectItem href=''>
             <H4>React Form</H4>
             <P16>React interactive form</P16>
-            <Divider color='primary' />
-          </div>
+          </ProjectItem>
         </div>
       </div>
     </Container>
