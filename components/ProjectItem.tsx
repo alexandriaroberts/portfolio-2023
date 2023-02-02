@@ -17,23 +17,20 @@ export const ProjectItem = ({ href, children, ...props }: ProjectItemProps) => (
     href={href}
     target='_blank'
     rel='noreferrer'
-    sx={{ textDecoration: 'none', color: 'text' }}
     {...props}
+    sx={{
+      textDecoration: 'none',
+      color: 'primary',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '16px',
+      ':hover': {
+        bg: 'hsla(0,0%,100%,.05)',
+      },
+      transition: 'all 0.3s ease',
+    }}
   >
-    <a
-      sx={{
-        color: 'primary',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '16px',
-        ':hover': {
-          bg: 'hsla(0,0%,100%,.05)',
-        },
-        transition: 'all 0.3s ease',
-      }}
-    >
-      {children}
-      <Divider color='primary' />
-    </a>
+    {children}
+    <Divider color='primary' />
   </a>
 );

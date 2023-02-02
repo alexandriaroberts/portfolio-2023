@@ -69,7 +69,6 @@ export const Footer = () => (
       <H3>You can find me on</H3>
 
       <Socials
-        //TODO: Fix this error
         width={['40px', '60px']}
         height='60px'
         color='text'

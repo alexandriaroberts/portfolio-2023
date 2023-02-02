@@ -5,7 +5,7 @@
 import { jsx } from 'theme-ui';
 
 export type SocialProps = {
-  width?: [string];
+  width?: {};
   height?: string;
   color?: string;
   hoverColor?: string;
