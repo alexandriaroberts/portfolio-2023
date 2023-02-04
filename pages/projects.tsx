@@ -109,7 +109,7 @@ export default function Projects() {
             mx: '64px',
             mt: ['64px', null, '204px'],
             mb: '64px',
-            // zIndex: 1,
+   
           }}
         >
           <ProjectItem href=''>
