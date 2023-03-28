@@ -46,7 +46,6 @@ export const NavLink = ({ href, target, children, ...props }: NavLinkProps) => {
           '&::after': {
             display: 'inline',
             transform: 'translate3d(0, 100%, 0)',
-            boxShadow: `0px 0px 8px ${theme.colors.primary}`,
           },
         },
         '&:visited, &:active, &:focus': {

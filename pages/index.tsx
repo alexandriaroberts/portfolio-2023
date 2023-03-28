@@ -2,6 +2,7 @@
 /** @jsx jsx */
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
+import { TimelineLite, TweenMax, Back, Bezier } from 'gsap';
 
 import { Container } from '../components/Container';
 import { Divider } from '../components/Divider';
@@ -9,7 +10,29 @@ import { H1, H2, P } from '../components/Typography';
 import { Socials } from '../components/Socials';
 import { HeadingDecoration } from '../components/HeadingDecoration';
 
+const images: string[] = [
+  'https://uploads-ssl.webflow.com/622dbec40bef54e41bd8c025/62bcb8d6809ed2655024dd54_01.svg',
+  'https://uploads-ssl.webflow.com/622dbec40bef54e41bd8c025/62bcb8d5c3f4e447fa662f1d_03.svg',
+  // 'https://via.placeholder.com/100',
+  // Add more image URLs here as desired
+];
+
 export default function Home() {
+  if (typeof document !== 'undefined') {
+    document.addEventListener('mousemove', function (event: MouseEvent) {
+      const imageUrl = images[Math.floor(Math.random() * images.length)];
+      const image = new Image(50, 50);
+      image.src = imageUrl;
+      image.style.position = 'absolute';
+      image.style.left = event.clientX + 'px';
+      image.style.top = event.clientY + 'px';
+      document.getElementById('image-trail')?.appendChild(image);
+      setTimeout(() => {
+        image.remove();
+      }, 1000);
+    });
+  }
+
   return (
     <Container>
       <div
@@ -20,6 +43,19 @@ export default function Home() {
           gap: ['16px', '64px'],
         }}
       >
+        <div
+          id='image-trail'
+          sx={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '50px',
+            height: '50px',
+            background: 'transparent',
+            zIndex: '-1',
+            pointerEvents: 'none',
+          }}
+        />
         <div sx={{ gridColumn: 1 }}>
           <H1
             sx={{
