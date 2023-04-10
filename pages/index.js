@@ -11,44 +11,6 @@ import { Socials } from '../components/Socials';
 import { HeadingDecoration } from '../components/HeadingDecoration';
 
 export default function Home() {
-  // if (typeof document !== 'undefined') {
-  //   let FollowBox = '#Wrap .FollowBox';
-  //   gsap.set(FollowBox, {
-  //     xPercent: -50,
-  //     yPercent: -50,
-  //     scale: 0,
-  //   });
-
-  //   window.addEventListener('mousemove', (e) => {
-  //     gsap.to(FollowBox, {
-  //       duration: 0.5,
-  //       overwrite: 'auto',
-  //       x: e.clientX,
-  //       y: e.clientY,
-  //       stagger: 0.15,
-  //       ease: 'none',
-  //     });
-
-  //     let TL = gsap.timeline({
-  //       defaults: { duration: 0.3, ease: 'none' },
-  //     });
-  //     TL.to(FollowBox, {
-  //       scale: 1,
-  //       overwrite: 'auto',
-  //       stagger: { amount: 0.15, from: 'start', ease: 'none' },
-  //     });
-  //     TL.to(
-  //       FollowBox,
-  //       {
-  //         overwrite: 'auto',
-  //         scale: 0,
-  //         stagger: { amount: 0.15, from: 'end', ease: 'none' },
-  //       },
-  //       '<+=2.5'
-  //     );
-  //   });
-  // }
-
   if (typeof document !== 'undefined') {
     // body element
     const body = document.body;
@@ -116,7 +78,7 @@ export default function Home() {
       }
       resize() {
         // reset styles
-        TweenMax.set(this.DOM.el, this.defaultStyle);
+        gsap.set(this.DOM.el, this.defaultStyle);
         // get sizes/position
         this.getRect();
       }
@@ -195,9 +157,9 @@ export default function Home() {
         // show image at position [this.imgPosition]
         const img = this.images[this.imgPosition];
         // kill any tween on the image
-        TweenMax.killTweensOf(img.DOM.el);
+        gsap.killTweensOf(img.DOM.el);
 
-        new TimelineMax()
+        new gsap.core.Timeline()
           // show the image
           .set(
             img.DOM.el,
@@ -264,7 +226,102 @@ export default function Home() {
     });
   }
   return (
-    <Container>
+    <Container sx={{ overflow: 'hidden' }}>
+      <div
+        id='Wrap'
+        className='content'
+        sx={{
+          position: 'relative',
+          background: 'transparent',
+          zIndex: -1,
+        }}
+      >
+        <img
+          className='content_img'
+          src='../images/bitcoin-btc-logo.svg'
+          alt=''
+          sx={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: '-100px',
+            maxWidth: '70px',
+            borderRadius: 0,
+            objectFit: 'contain',
+          }}
+        />
+        <img
+          className='content_img'
+          src='../images/daisy.svg'
+          alt=''
+          sx={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: '-100px',
+            maxWidth: '70px',
+            borderRadius: 0,
+            objectFit: 'contain',
+          }}
+        />
+        <img
+          className='content_img'
+          src='../images/reshot-icon-programming-laptop-3UPSGZELA2.svg'
+          alt=''
+          sx={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: '-100px',
+            maxWidth: '70px',
+            borderRadius: 0,
+            objectFit: 'contain',
+          }}
+        />
+        <img
+          className='content_img'
+          src='../images/woman-lifting-weights-medium-skin-tone-svgrepo-com.svg'
+          alt=''
+          sx={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: '-100px',
+            maxWidth: '70px',
+            borderRadius: 0,
+            objectFit: 'contain',
+          }}
+        />
+        <img
+          className='content_img'
+          src='../images/reshot-icon-books-9KHFUX6M85.svg'
+          alt=''
+          sx={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: '-100px',
+            maxWidth: '70px',
+            borderRadius: 0,
+            objectFit: 'contain',
+          }}
+        />
+        <img
+          className='content_img'
+          src='../images/reshot-icon-cooking-6SXQEAC4MT.svg'
+          alt=''
+          sx={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: '-100px',
+            maxWidth: '70px',
+            borderRadius: 0,
+            objectFit: 'contain',
+          }}
+        />
+      </div>
+
       <div
         sx={{
           display: 'grid',
@@ -273,97 +330,6 @@ export default function Home() {
           gap: ['16px', '64px'],
         }}
       >
-        <div
-          id='Wrap'
-          className='content'
-          sx={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100px',
-            height: '100px',
-            background: 'transparent',
-            zIndex: '-1',
-            pointerEvents: 'none',
-          }}
-        >
-          <img
-            className='FollowBox content_img'
-            src='../images/bitcoin-btc-logo.svg'
-            alt=''
-            sx={{
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              maxWidth: '70px',
-              borderRadius: 0,
-            }}
-          />
-          <img
-            className='FollowBox'
-            src='../images/daisy.svg'
-            alt=''
-            // sx={{ width: '100px', height: '100px' }}
-            sx={{
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              maxWidth: '70px',
-              borderRadius: 0,
-            }}
-          />
-          <img
-            className='FollowBox'
-            src='../images/reshot-icon-programming-laptop-3UPSGZELA2.svg'
-            alt=''
-            sx={{
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              maxWidth: '70px',
-              borderRadius: 0,
-            }}
-          />
-          <img
-            className='FollowBox'
-            src='../images/woman-lifting-weights-medium-skin-tone-svgrepo-com.svg'
-            alt=''
-            // sx={{ width: '100px', height: '100px' }}
-            sx={{
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              maxWidth: '70px',
-              borderRadius: 0,
-            }}
-          />
-          <img
-            className='FollowBox'
-            src='../images/reshot-icon-books-9KHFUX6M85.svg'
-            alt=''
-            sx={{
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              maxWidth: '70px',
-              borderRadius: 0,
-            }}
-          />
-          <img className='FollowBox' src='' alt='' />
-        </div>
-        <div
-          id='image-trail'
-          sx={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '50px',
-            height: '50px',
-            background: 'transparent',
-            zIndex: '-1',
-            pointerEvents: 'none',
-          }}
-        />
         <div sx={{ gridColumn: 1 }}>
           <H1
             sx={{
@@ -441,8 +407,8 @@ export default function Home() {
         </H2>
         <div sx={{ maxWidth: '840px', m: '0 auto' }}>
           <P>
-            Is a A UI Engineer with strong skills in UI design skills and focus
-            on usability and learning new skills.
+            Is a UI Engineer with strong skills in UI design skills and focus on
+            usability and learning new skills.
           </P>
           <P>
             Is a A UI Engineer with strong skills in UI design skills and focus
