@@ -233,7 +233,7 @@ export default function Home() {
         sx={{
           position: 'relative',
           background: 'transparent',
-          zIndex: -1,
+          zIndex: 1,
         }}
       >
         <img
@@ -392,6 +392,7 @@ export default function Home() {
                 width: ['255px', null, '100%'],
                 maxWidth: '537px',
                 height: 'auto',
+                zIndex: 2,
               }}
             />
           </div>
@@ -405,7 +406,7 @@ export default function Home() {
             me
           </span>
         </H2>
-        <div sx={{ maxWidth: '840px', m: '0 auto' }}>
+        <div sx={{ maxWidth: '840px', mx: 'auto', mb: ['104px', '164px'] }}>
           <P>
             Is a UI Engineer with strong skills in UI design skills and focus on
             usability and learning new skills.
