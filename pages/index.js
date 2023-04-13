@@ -408,17 +408,25 @@ export default function Home() {
         </H2>
         <div sx={{ maxWidth: '840px', mx: 'auto', mb: ['104px', '164px'] }}>
           <P>
-            Is a UI Engineer with strong skills in UI design skills and focus on
-            usability and learning new skills.
+            Hello, I am Lexie, an UI Engineer/Front-End Developer based in Bali.
+            Looking for my next opportunity.
           </P>
-          <P>
-            Is a A UI Engineer with strong skills in UI design skills and focus
-            on usability and learning new skills. Is a A UI Engineer with strong
-            skills in UI design skills and focus on usability and learning new
-            skills. Is a A UI Engineer with strong skills in UI design skills
-            and focus on usability and learning new skills. Is a A UI Engineer
-            with strong skills in UI design skills and focus on usability and
-            learning new skills.
+          <P sx={{ mt: '32px' }}>
+            I love working with CSS, JavaScript, React and absolutely love being
+            in crypto space. Anything CSS/JavaScript and I love digging into it
+            more! I also love learning new technologies and have worked on
+            variety of projects for work and on personal projects, where I could
+            quickly pick up new frameworks and languages. Please look at my
+            projects section. In 2020, I started learning to surf in my spare
+            time, and it's such a slow progress, so I have also started working
+            out a lot which is so much fun.
+          </P>
+          <P sx={{ mt: '32px' }}>
+            If you would like to find out more about me, my skills and how I can
+            fit into your team please feel free to message me. I love talking
+            about code, so even if you aren’t looking for a new team member
+            right now, I would love to connect with you so I can share my
+            interests and passions with other like minded people.
           </P>
         </div>
       </main>
