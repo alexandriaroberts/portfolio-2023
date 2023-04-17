@@ -2,7 +2,7 @@
 /** @jsx jsx */
 /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
-import { TimelineMax, TweenMax, Back, gsap, Expo, Power1, Quint } from 'gsap';
+import { gsap, Expo, Power1, Quint } from 'gsap';
 
 import { Container } from '../components/Container';
 import { Divider } from '../components/Divider';
