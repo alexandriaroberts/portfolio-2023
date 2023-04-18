@@ -85,7 +85,7 @@ export default function Projects() {
           bg: 'text',
         }}
       >
-        <div
+        {/* <div
           sx={{
             position: 'absolute',
             top: '-27%',
@@ -98,7 +98,7 @@ export default function Projects() {
             backgroundSize: '100% 100%',
             display: ['none', 'block'],
           }}
-        />
+        /> */}
         <div
           sx={{
             display: 'grid',
@@ -107,9 +107,8 @@ export default function Projects() {
             gridGap: '64px',
             alignContent: 'center',
             mx: '64px',
-            mt: ['64px', null, '204px'],
-            mb: '64px',
-   
+            my: ['164px'],
+            // mb: '64px',
           }}
         >
           <ProjectItem href=''>
