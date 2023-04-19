@@ -18,22 +18,24 @@ export default function Home() {
     // helper functions
     const MathUtils = {
       // linear interpolation
-      lerp: (a, b, n) => (1 - n) * a + n * b,
+      lerp: (a: number, b: number, n: number) => (1 - n) * a + n * b,
       // distance between two points
-      distance: (x1, y1, x2, y2) => Math.hypot(x2 - x1, y2 - y1),
+      distance: (x1: number, y1: number, x2: number, y2: number) =>
+        Math.hypot(x2 - x1, y2 - y1),
     };
 
     // get the mouse position
-    const getMousePos = (ev) => {
+    const getMousePos = (ev: Event | undefined) => {
       let posx = 0;
       let posy = 0;
+      const docEl = document.documentElement;
       if (!ev) ev = window.event;
-      if (ev.pageX || ev.pageY) {
-        posx = ev.pageX;
-        posy = ev.pageY;
-      } else if (ev.clientX || ev.clientY) {
-        posx = ev.clientX + body.scrollLeft + docEl.scrollLeft;
-        posy = ev.clientY + body.scrollTop + docEl.scrollTop;
+      if ((ev as MouseEvent).pageX || (ev as MouseEvent).pageY) {
+        posx = (ev as MouseEvent).pageX;
+        posy = (ev as MouseEvent).pageY;
+      } else if ((ev as MouseEvent).clientX || (ev as MouseEvent).clientY) {
+        posx = (ev as MouseEvent).clientX + body.scrollLeft + docEl.scrollLeft;
+        posy = (ev as MouseEvent).clientY + body.scrollTop + docEl.scrollTop;
       }
       return { x: posx, y: posy };
     };
@@ -41,8 +43,8 @@ export default function Home() {
     // mousePos: current mouse position
     // cacheMousePos: previous mouse position
     // lastMousePos: last last recorded mouse position (at the time the last image was shown)
-    let cacheMousePos;
-    let lastMousePos;
+    let cacheMousePos: { x: any; y: any };
+    let lastMousePos: { x: any; y: any };
     let mousePos = (lastMousePos = cacheMousePos = { x: 0, y: 0 });
 
     // update the mouse position
@@ -58,7 +60,10 @@ export default function Home() {
       );
 
     class Image {
-      constructor(el) {
+      DOM: { el: any };
+      defaultStyle: { scale: number; x: number; y: number; opacity: number };
+      rect: any;
+      constructor(el: any) {
         this.DOM = { el: el };
         // image deafult styles
         this.defaultStyle = {
@@ -92,13 +97,19 @@ export default function Home() {
     }
 
     class ImageTrail {
+      DOM: { content: Element | null };
+      images: Image[];
+      imagesTotal: any;
+      imgPosition: number;
+      zIndexVal: number;
+      threshold: number;
       constructor() {
         // images container
         this.DOM = { content: document.querySelector('.content') };
         // array of Image objs, one per image element
         this.images = [];
-        [...this.DOM.content.querySelectorAll('img')].forEach((img) =>
-          this.images.push(new Image(img))
+        Array.from(this.DOM.content?.querySelectorAll('img') ?? []).forEach(
+          (img) => this.images.push(new Image(img))
         );
         // total number of images
         this.imagesTotal = this.images.length;
