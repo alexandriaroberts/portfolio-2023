@@ -26,7 +26,13 @@ export const Navigation = ({ className, ...props }: NavigationProps) => (
         <img
           src='../heart.svg'
           alt='home'
-          sx={{ width: ['40px', null, '60px'] }}
+          sx={{
+            width: ['40px', null, '60px'],
+            transition: 'all 0.3s ease',
+            '&:hover': {
+              transform: 'scale(1.1)',
+            },
+          }}
         />
       </a>
       <div

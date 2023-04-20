@@ -6,14 +6,13 @@ import { jsx } from 'theme-ui';
 import { H2, H4, P, P16 } from '../components/Typography';
 import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';
-import { Divider } from '../components/Divider';
 import { HeadingDecoration } from '../components/HeadingDecoration';
 import { ProjectItem } from '../components/ProjectItem';
 
 export default function Projects() {
   return (
     <Container>
-      <div sx={{ mt: ['104px', '164px'] }}>
+      <div sx={{ my: ['104px', '164px'] }}>
         <H2>
           <span>
             Projects
@@ -36,12 +35,14 @@ export default function Projects() {
           }}
         >
           <ProjectCard
-            href='https://thegraph.com/blog/'
-            image='../projects/graph-blog.png'
+            href='https://display-nfts.netlify.app/'
+            image='../projects/display-nfts.png'
           >
-            Graph Protocols Blog
+            Display of NFT&apos;s from ERC-721 address
             <P16 sx={{ mt: '16px' }}>
-              Info:Helped build this new app while we started from scratch,{' '}
+              The side project which uses Alechemy&apos;s SDK to display
+              NFT&apos;s from Ethereum addresses. Tech: NextJs,Alchemy SDK,
+              Theme-UI
             </P16>
           </ProjectCard>
           <ProjectCard
@@ -50,7 +51,9 @@ export default function Projects() {
           >
             Graph Protocols Blog
             <P16 sx={{ mt: '16px' }}>
-              Info:Helped build this new app while we started from scratch,{' '}
+              I helped build this new blog app while we started from scratch, it
+              was an absolutely fun work to do while at Graph Protocol which is
+              in my main stack React/NextJS
             </P16>
           </ProjectCard>
           <ProjectCard
@@ -79,26 +82,12 @@ export default function Projects() {
           mt: ['104px', '164px'],
           position: 'absolute',
           left: 0,
-          bottom: ['14%', '21%'],
+          bottom: ['16%', '20%'],
           width: '100%',
           overflow: 'hidden',
           bg: 'text',
         }}
       >
-        {/* <div
-          sx={{
-            position: 'absolute',
-            top: '-27%',
-            left: ['27%', null, null, '35%'],
-            width: '100%',
-            minWidth: [0, '283px', '206px'],
-            maxWidth: [0, '283px', '306px'],
-            aspectRatio: '570 / 799',
-            backgroundImage: `url('../orange-tree.png')`,
-            backgroundSize: '100% 100%',
-            display: ['none', 'block'],
-          }}
-        /> */}
         <div
           sx={{
             display: 'grid',
@@ -108,7 +97,6 @@ export default function Projects() {
             alignContent: 'center',
             mx: '64px',
             my: ['164px'],
-            // mb: '64px',
           }}
         >
           <ProjectItem href=''>

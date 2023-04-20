@@ -24,7 +24,7 @@ export const ProjectItem = ({ href, children, ...props }: ProjectItemProps) => (
       display: 'flex',
       flexDirection: 'column',
       gap: '16px',
-      p: '16px',
+      p: '8px',
       ':hover': {
         bg: 'hsla(0,0%,100%,.05)',
       },
