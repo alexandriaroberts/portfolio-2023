@@ -31,7 +31,7 @@ export default function Projects() {
             gap: '64px',
             textAlign: 'center',
             mt: ['64px', null, '104px'],
-            mb: '704px',
+            pb: ['964px', '704px'],
           }}
         >
           <ProjectCard
@@ -82,7 +82,7 @@ export default function Projects() {
           mt: ['104px', '164px'],
           position: 'absolute',
           left: 0,
-          bottom: ['16%', '20%'],
+          bottom: ['15%', '20%'],
           width: '100%',
           overflow: 'hidden',
           bg: 'text',
@@ -93,30 +93,43 @@ export default function Projects() {
             display: 'grid',
             gridTemplateColumns: ['1fr', null, '1fr 1fr'],
             gridTemplateRows: ['auto', null, '1fr 1fr'],
-            gridGap: '64px',
+            gridGap: ['32px', null, '64px'],
             alignContent: 'center',
-            mx: '64px',
-            my: ['164px'],
+            px: ['32px', '64px'],
+            mx: 'auto',
+            my: ['64px', null, '164px'],
+            maxWidth: '1288px',
           }}
         >
-          <ProjectItem href=''>
+          <ProjectItem href='https://github.com/alexandriaroberts/react-form-with-api'>
             <H4>React Form</H4>
             <P16>
               React interactive form, Info: Helped build this new app while we
-              started from scratch,
+              started from scratch. Languages:ReactJS, Netlify, Netlify hosting,
+              Restcountries.eu API
             </P16>
           </ProjectItem>
-          <ProjectItem href=''>
-            <H4>React Form</H4>
-            <P16>React interactive form</P16>
+          <ProjectItem href='https://github.com/alexandriaroberts/FlowerGame-VueJS'>
+            <H4>Flower Game VueJS</H4>
+            <P16>
+              This is fun little VueJS game, you have to click on the flower to
+              get the points. Languages:VueJS, SCSS/SASS, Netlify
+            </P16>
           </ProjectItem>
-          <ProjectItem href=''>
-            <H4>React Form</H4>
-            <P16>React interactive form</P16>
+          <ProjectItem href='https://github.com/alexandriaroberts/Space-Game-with-Canvas'>
+            <H4>Space Game</H4>
+            <P16>
+              This is a space game using JavaScript and Canvas, you have to use
+              your arrow keys to catch an alien by moving the space man
+              Languages:JavaScript, Canvas
+            </P16>
           </ProjectItem>
-          <ProjectItem href=''>
-            <H4>React Form</H4>
-            <P16>React interactive form</P16>
+          <ProjectItem href='https://github.com/alexandriaroberts/Nasa-API'>
+            <H4>Nasa API VueJS</H4>
+            <P16>
+              This project got me my first Codepen featured, doen in VueJs with
+              Nasa API Languages:VueJS, CSS, Nasa API
+            </P16>
           </ProjectItem>
         </div>
       </div>
