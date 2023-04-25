@@ -31,7 +31,7 @@ export default function Projects() {
             gap: '64px',
             textAlign: 'center',
             mt: ['64px', null, '104px'],
-            pb: ['964px', '704px'],
+            pb: ['764px', '804px'],
           }}
         >
           <ProjectCard
@@ -56,7 +56,7 @@ export default function Projects() {
               in my main stack React/NextJS
             </P16>
           </ProjectCard>
-          <ProjectCard
+          {/* <ProjectCard
             href='https://thegraph.com/blog/'
             image='../projects/graph-hack.png'
           >
@@ -73,7 +73,7 @@ export default function Projects() {
             <P16 sx={{ mt: '16px' }}>
               Info:Helped build this new app while we started from scratch,{' '}
             </P16>
-          </ProjectCard>
+          </ProjectCard> */}
         </div>
       </div>
       <div
@@ -82,7 +82,7 @@ export default function Projects() {
           mt: ['104px', '164px'],
           position: 'absolute',
           left: 0,
-          bottom: ['15%', '20%'],
+          bottom: ['408px', '408px', '604px'],
           width: '100%',
           overflow: 'hidden',
           bg: 'text',
