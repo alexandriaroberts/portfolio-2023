@@ -47,7 +47,7 @@ export default function Projects() {
           </ProjectCard>
           <ProjectCard
             href='https://thegraph.com/blog/'
-            image='../projects/graph-hack.png'
+            image='../projects/graph-blog.png'
           >
             Graph Protocols Blog
             <P16 sx={{ mt: '16px' }}>
