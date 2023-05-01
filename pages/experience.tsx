@@ -63,7 +63,7 @@ export default function Experinece() {
             >
               <P>
                 - Worked in NextJs, React, ThemeUI and shipped many marketing
-                pages and UI's in tight deadlines.
+                pages and UI&apos;s in tight deadlines.
               </P>
               <P>
                 - Worked on creating a design system and developed components
@@ -111,8 +111,8 @@ export default function Experinece() {
                 VISION
               </P>
               <P>
-                - Building web interfaces, features using API's, bug fixes and
-                updating front-end design while moving from V1 to V2.
+                - Building web interfaces, features using API&apos;s, bug fixes
+                and updating front-end design while moving from V1 to V2.
               </P>
               <P>
                 - Working with storybook, creating web pages to show different
@@ -144,7 +144,7 @@ export default function Experinece() {
               }}
             >
               <P>
-                This is a project I started while working doing Mozilla's
+                This is a project I started while working doing Mozilla&apos;s
                 incubator program as a founder and team leader, with managing a
                 team of 5, as well as conducting user interviews for research
                 project to we developed on working a MVP using VueJS. This was a

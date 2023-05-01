@@ -1,4 +1,6 @@
-export const theme = {
+import { Theme } from 'theme-ui';
+
+export const theme: Theme = {
   fonts: {
     body: 'Noto Serif, serif',
     heading: 'Lora, Noto-serif',

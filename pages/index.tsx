@@ -429,8 +429,8 @@ export default function Home() {
             variety of projects for work and on personal projects, where I could
             quickly pick up new frameworks and languages. Please look at my
             projects section. In 2020, I started learning to surf in my spare
-            time, and it's such a slow progress, so I have also started working
-            out a lot which is so much fun.
+            time, and it&apos;s such a slow progress, so I have also started
+            working out a lot which is so much fun.
           </P>
           <P sx={{ mt: '32px' }}>
             If you would like to find out more about me, my skills and how I can
