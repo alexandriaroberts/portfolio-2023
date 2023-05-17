@@ -91,7 +91,7 @@ export const P = ({ children, className, ...props }: TypographyProps) => (
       fontStyle: 'normal',
       fontWeight: '500',
       lineHeight: ['28px', null, '37px'],
-      letterSpacing: '2px',
+      letterSpacing: '1px',
     }}
     {...props}
   >
