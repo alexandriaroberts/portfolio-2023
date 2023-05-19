@@ -22,7 +22,10 @@ export default function Experinece() {
           <H2>
             <span>
               Experience
-              <HeadingDecoration left={['85px', null, '120px', '348px']} />
+              <HeadingDecoration
+                left={['130px', null, '182px', '339px']}
+                width={['50px', null, '66px', '132px']}
+              />
             </span>
           </H2>
         </div>

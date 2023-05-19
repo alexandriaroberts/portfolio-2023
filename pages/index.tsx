@@ -413,7 +413,10 @@ export default function Home() {
         <H2>
           About{' '}
           <span>
-            <HeadingDecoration left={'50%'} />
+            <HeadingDecoration
+              left={'49%'}
+              width={['44px', null, '60px', '106px']}
+            />
             me
           </span>
         </H2>

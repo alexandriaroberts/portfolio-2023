@@ -16,7 +16,10 @@ export default function Projects() {
         <H2>
           <span>
             Projects
-            <HeadingDecoration left={['85px', null, '120px', '240px']} />
+            <HeadingDecoration
+              left={['93px', null, '130px', '241px']}
+              width={['40px', null, '56px', '100px']}
+            />
           </span>
         </H2>
         <div
