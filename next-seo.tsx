@@ -6,10 +6,9 @@ const defaultSEO = {
     type: 'website',
     url: 'https://alexandriaroberts.dev/',
     locale: 'en_UK',
-    //TODO: Add image url
     images: [
       {
-        url: '',
+        url: 'https://res.cloudinary.com/dv3lue3qa/image/upload/v1684893239/profile.jpg',
         alt: 'Alexandria Roberts',
       },
     ],
