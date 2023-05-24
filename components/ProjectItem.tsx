@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-/** @jsx jsx */
-/** @jsxRuntime classic */
-import { jsx } from 'theme-ui';
+
 import { ReactNode } from 'react';
 
 import { Divider } from './Divider';

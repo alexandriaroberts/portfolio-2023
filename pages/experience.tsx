@@ -1,7 +1,3 @@
-/** @jsx jsx */
-/** @jsxRuntime classic */
-import { jsx } from 'theme-ui';
-
 import { H2, H4, S20, P } from '../components/Typography';
 import { Container } from '../components/Container';
 import { HeadingDecoration } from '../components/HeadingDecoration';

@@ -1,7 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-/** @jsx jsx */
-/** @jsxRuntime classic */
-import { jsx } from 'theme-ui';
 
 import { H2, H4, P, P16 } from '../components/Typography';
 import { Container } from '../components/Container';

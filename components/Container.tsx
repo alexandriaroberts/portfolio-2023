@@ -1,6 +1,3 @@
-/** @jsx jsx */
-/** @jsxRuntime classic */
-import { jsx } from 'theme-ui';
 import { HTMLAttributes } from 'react';
 
 export const Container = ({

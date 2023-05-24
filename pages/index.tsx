@@ -1,7 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-/** @jsx jsx */
-/** @jsxRuntime classic */
-import { jsx } from 'theme-ui';
 import { gsap, Expo, Power1, Quint } from 'gsap';
 
 import { Container } from '../components/Container';

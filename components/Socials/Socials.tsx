@@ -1,8 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-// TODO: Find a way to remove these imports with jsx
-/** @jsx jsx */
-/** @jsxRuntime classic */
-import { jsx } from 'theme-ui';
 
 export type SocialProps = {
   width?: {};
