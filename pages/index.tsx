@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { gsap, Expo, Power1, Quint } from 'gsap';
 
 import { Container } from '../components/Container';

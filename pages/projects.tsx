@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-
 import { H2, H4, P, P16 } from '../components/Typography';
 import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';

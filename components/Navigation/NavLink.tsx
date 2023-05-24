@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-
 import { ReactNode } from 'react';
 
 export type NavLinkProps = {

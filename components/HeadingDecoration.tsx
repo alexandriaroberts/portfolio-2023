@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-
 import classnames from 'classnames';
 import { HTMLAttributes } from 'react';
 
