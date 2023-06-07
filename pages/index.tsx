@@ -355,8 +355,9 @@ export default function Home() {
               my: '20px',
             }}
           >
-            Is an UI Engineer with strong skills in UI design and focus on
-            usability and love learning new tech.
+            Is a Front-End Developer with strong skills in React, NextJS,
+            JavaScript, CSS and TypeScript with focus on usability and love
+            learning new tech.
           </P>
           <Socials sx={{ mt: '24px' }} />
         </div>
