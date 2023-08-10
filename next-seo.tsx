@@ -16,7 +16,7 @@ const defaultSEO = {
   twitter: {
     handle: '@iamlexieonearth',
     site: '@iamlexieonearth',
-    cardType: 'summary_large_image',
+    cardType: 'summary_medium_image',
   },
 };
 
