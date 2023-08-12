@@ -1,4 +1,4 @@
-import { H2, H4, P, P16 } from '../components/Typography';
+import { H2, H4, P, P16, S18 } from '../components/Typography';
 import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';
 import { HeadingDecoration } from '../components/HeadingDecoration';
@@ -24,12 +24,11 @@ export default function Projects() {
               '1fr',
               'repeat(auto-fill, minmax(min(259px, 100%), 1fr))',
               null,
-              'repeat(auto-fill, minmax(min(389px, 100%), 1fr))',
+              'repeat(auto-fill, minmax(min(369px, 100%), 1fr))',
             ],
-            gap: '64px',
-            textAlign: 'center',
+            gap: ['64px', '104px'],
             mt: ['64px', null, '104px'],
-            pb: ['764px', '804px'],
+            pb: ['364px', '404px', '504px'],
           }}
         >
           <ProjectCard
@@ -37,10 +36,13 @@ export default function Projects() {
             image='../projects/display-nfts.png'
           >
             Display of NFT&apos;s from ERC-721 address
-            <P16 sx={{ mt: '16px' }}>
+            <P16>
               The side project which uses Alechemy&apos;s SDK to display
-              NFT&apos;s from Ethereum addresses. Tech: NextJs,Alchemy SDK,
-              Theme-UI
+              NFT&apos;s from Ethereum addresses.
+            </P16>
+            <P16>
+              {' '}
+              <S18>Tech Stack:</S18> NextJs, Alchemy SDK, Theme-UI
             </P16>
           </ProjectCard>
           <ProjectCard
@@ -48,30 +50,93 @@ export default function Projects() {
             image='../projects/graph-blog.png'
           >
             Graph Protocols Blog
-            <P16 sx={{ mt: '16px' }}>
+            <P16>
               I helped build this new blog app while we started from scratch, it
-              was an absolutely fun work to do while at Graph Protocol which is
-              in my main stack React/NextJS
+              was an absolutely fun work to do while at Graph Protocol.{' '}
             </P16>
-          </ProjectCard>
-          {/* <ProjectCard
-            href='https://thegraph.com/blog/'
-            image='../projects/graph-hack.png'
-          >
-            Graph Protocols Blog
-            <P16 sx={{ mt: '16px' }}>
-              Info:Helped build this new app while we started from scratch,{' '}
+            <P16>
+              {' '}
+              <S18>Tech Stack:</S18> NextJs, TypeScript, Theme-UI
             </P16>
           </ProjectCard>
           <ProjectCard
-            href='https://thegraph.com/blog/'
-            image='../projects/graph-hack.png'
+            href='https://codepen.io/iamlexieonearth/full/QYNmEa'
+            image='../projects/flower-game.png'
+          >
+            Flower Game in VueJS
+            <P16>
+              This is fun little VueJS game, you have to click on the flower to
+              get the points.
+            </P16>
+            <P16>
+              <S18>Tech Stack:</S18> VueJS, SCSS/SASS, Netlify
+            </P16>
+            <div sx={{ display: 'flex' }}>
+              <S18>Link to Code here:</S18>
+              <a
+                href='https://github.com/alexandriaroberts/FlowerGame-VueJS'
+                target='_blank'
+                rel='noopener noreferrer'
+                sx={{
+                  ml: '4px',
+                  color: 'currentColor',
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    color: 'secondaryOrange',
+                    transform: 'scale(1.1)',
+                  },
+                  svg: {
+                    width: '24px',
+                    height: '24px',
+                  },
+                }}
+              >
+                <svg viewBox='0 0 16 16'>
+                  <title>Github</title>
+                  <use xlinkHref='../images/sprite.svg#github'></use>
+                </svg>
+              </a>
+            </div>
+          </ProjectCard>
+          <ProjectCard
+            href='https://react-form-with-api.netlify.app/'
+            image='../projects/react-form.png'
           >
             Graph Protocols Blog
-            <P16 sx={{ mt: '16px' }}>
+            <P16>
               Info:Helped build this new app while we started from scratch,{' '}
             </P16>
-          </ProjectCard> */}
+            <P16>
+              <S18>Tech Stack:</S18> ReactJS, Netlify, Netlify hosting,
+              Restcountries.eu API
+            </P16>
+            <div sx={{ display: 'flex' }}>
+              <S18>Link to Code here:</S18>
+              <a
+                href='https://github.com/alexandriaroberts/react-form-with-api'
+                target='_blank'
+                rel='noopener noreferrer'
+                sx={{
+                  ml: '4px',
+                  color: 'currentColor',
+                  transition: 'all 0.3s ease',
+                  '&:hover': {
+                    color: 'secondaryOrange',
+                    transform: 'scale(1.1)',
+                  },
+                  svg: {
+                    width: '24px',
+                    height: '24px',
+                  },
+                }}
+              >
+                <svg viewBox='0 0 16 16'>
+                  <title>Github</title>
+                  <use xlinkHref='../images/sprite.svg#github'></use>
+                </svg>
+              </a>
+            </div>
+          </ProjectCard>
         </div>
       </div>
       <div
@@ -90,7 +155,7 @@ export default function Projects() {
           sx={{
             display: 'grid',
             gridTemplateColumns: ['1fr', null, '1fr 1fr'],
-            gridTemplateRows: ['auto', null, '1fr 1fr'],
+            gridTemplateRows: ['auto', null, '1fr'],
             gridGap: ['32px', null, '64px'],
             alignContent: 'center',
             px: ['32px', '64px'],
@@ -99,21 +164,6 @@ export default function Projects() {
             maxWidth: '1288px',
           }}
         >
-          <ProjectItem href='https://github.com/alexandriaroberts/react-form-with-api'>
-            <H4>React Form</H4>
-            <P16>
-              React interactive form, Info: Helped build this new app while we
-              started from scratch. Languages:ReactJS, Netlify, Netlify hosting,
-              Restcountries.eu API
-            </P16>
-          </ProjectItem>
-          <ProjectItem href='https://github.com/alexandriaroberts/FlowerGame-VueJS'>
-            <H4>Flower Game VueJS</H4>
-            <P16>
-              This is fun little VueJS game, you have to click on the flower to
-              get the points. Languages:VueJS, SCSS/SASS, Netlify
-            </P16>
-          </ProjectItem>
           <ProjectItem href='https://github.com/alexandriaroberts/Space-Game-with-Canvas'>
             <H4>Space Game</H4>
             <P16>
