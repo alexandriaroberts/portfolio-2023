@@ -19,7 +19,7 @@ export const Socials = ({
     sx={{
       display: 'flex',
       alignItems: 'center',
-      gap: '20px',
+      gap: '24px',
       color: color,
       a: {
         color: 'currentColor',
