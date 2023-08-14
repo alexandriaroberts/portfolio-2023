@@ -70,7 +70,7 @@ export const H4 = ({ children, className, ...props }: TypographyProps) => (
       fontWeight: '400',
       lineHeight: ['28px', null, '36px'],
       letterSpacing: '2px',
-      color: 'primary',
+      color: 'secondaryOrange',
     }}
     {...props}
   >

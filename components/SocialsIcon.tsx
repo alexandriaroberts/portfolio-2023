@@ -10,8 +10,8 @@ export type SocialsIconProps = {
 };
 
 export const SocialsIcon = ({
-  width = ['30px'],
-  height = '30px',
+  width = ['22px'],
+  height = '22px',
   color,
   hoverColor = 'secondaryOrange',
   title,
@@ -24,7 +24,6 @@ export const SocialsIcon = ({
     className={className}
     sx={{
       display: 'flex',
-      alignItems: 'center',
       gap: '32px',
       color: color,
       a: {
@@ -42,7 +41,12 @@ export const SocialsIcon = ({
     }}
     {...props}
   >
-    <a href={href} target='_blank' rel='noopener noreferrer'>
+    <a
+      href={href}
+      target='_blank'
+      rel='noopener noreferrer'
+      sx={{ display: 'flex' }}
+    >
       <svg viewBox='0 0 16 16'>
         <title>{title}</title>
         <use xlinkHref={xlinkHref}></use>

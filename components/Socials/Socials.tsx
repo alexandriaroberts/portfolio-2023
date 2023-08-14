@@ -19,7 +19,7 @@ export const Socials = ({
     sx={{
       display: 'flex',
       alignItems: 'center',
-      gap: '32px',
+      gap: '20px',
       color: color,
       a: {
         color: 'currentColor',
@@ -77,6 +77,17 @@ export const Socials = ({
       <svg viewBox='0 0 100 100'>
         <title>Codepen</title>
         <use xlinkHref='../images/sprite.svg#codepen'></use>
+      </svg>
+    </a>
+
+    <a
+      href='https://www.linkedin.com/in/alexandria-roberts-001/'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
+      <svg viewBox='0 0 512 512'>
+        <title>LinkedIn</title>
+        <use xlinkHref='../images/sprite.svg#linkedin'></use>
       </svg>
     </a>
   </div>

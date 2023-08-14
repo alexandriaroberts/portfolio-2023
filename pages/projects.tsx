@@ -3,6 +3,7 @@ import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';
 import { HeadingDecoration } from '../components/HeadingDecoration';
 import { ProjectItem } from '../components/ProjectItem';
+import { SocialsIcon } from '../components/SocialsIcon';
 
 export default function Projects() {
   return (
@@ -41,9 +42,16 @@ export default function Projects() {
               NFT&apos;s from Ethereum addresses.
             </P16>
             <P16>
-              {' '}
               <S18>Tech Stack:</S18> NextJs, Alchemy SDK, Theme-UI
             </P16>
+            <div sx={{ display: 'flex' }}>
+              <S18>Link to Code here:</S18>
+              <SocialsIcon
+                href='https://github.com/alexandriaroberts/display-nfts'
+                xlinkHref='../images/sprite.svg#github'
+                title='Github'
+              />
+            </div>
           </ProjectCard>
           <ProjectCard
             href='https://thegraph.com/blog/'
@@ -55,7 +63,6 @@ export default function Projects() {
               was an absolutely fun work to do while at Graph Protocol.{' '}
             </P16>
             <P16>
-              {' '}
               <S18>Tech Stack:</S18> NextJs, TypeScript, Theme-UI
             </P16>
           </ProjectCard>
@@ -73,29 +80,11 @@ export default function Projects() {
             </P16>
             <div sx={{ display: 'flex' }}>
               <S18>Link to Code here:</S18>
-              <a
+              <SocialsIcon
                 href='https://github.com/alexandriaroberts/FlowerGame-VueJS'
-                target='_blank'
-                rel='noopener noreferrer'
-                sx={{
-                  ml: '4px',
-                  color: 'currentColor',
-                  transition: 'all 0.3s ease',
-                  '&:hover': {
-                    color: 'secondaryOrange',
-                    transform: 'scale(1.1)',
-                  },
-                  svg: {
-                    width: '24px',
-                    height: '24px',
-                  },
-                }}
-              >
-                <svg viewBox='0 0 16 16'>
-                  <title>Github</title>
-                  <use xlinkHref='../images/sprite.svg#github'></use>
-                </svg>
-              </a>
+                xlinkHref='../images/sprite.svg#github'
+                title='Github'
+              />
             </div>
           </ProjectCard>
           <ProjectCard
@@ -112,29 +101,11 @@ export default function Projects() {
             </P16>
             <div sx={{ display: 'flex' }}>
               <S18>Link to Code here:</S18>
-              <a
+              <SocialsIcon
                 href='https://github.com/alexandriaroberts/react-form-with-api'
-                target='_blank'
-                rel='noopener noreferrer'
-                sx={{
-                  ml: '4px',
-                  color: 'currentColor',
-                  transition: 'all 0.3s ease',
-                  '&:hover': {
-                    color: 'secondaryOrange',
-                    transform: 'scale(1.1)',
-                  },
-                  svg: {
-                    width: '24px',
-                    height: '24px',
-                  },
-                }}
-              >
-                <svg viewBox='0 0 16 16'>
-                  <title>Github</title>
-                  <use xlinkHref='../images/sprite.svg#github'></use>
-                </svg>
-              </a>
+                xlinkHref='../images/sprite.svg#github'
+                title='Github'
+              />
             </div>
           </ProjectCard>
         </div>
@@ -164,19 +135,24 @@ export default function Projects() {
             maxWidth: '1288px',
           }}
         >
-          <ProjectItem href='https://github.com/alexandriaroberts/Space-Game-with-Canvas'>
+          <ProjectItem href='https://codepen.io/iamlexieonearth/full/KEoMye'>
             <H4>Space Game</H4>
             <P16>
               This is a space game using JavaScript and Canvas, you have to use
               your arrow keys to catch an alien by moving the space man
-              Languages:JavaScript, Canvas
+            </P16>
+            <P16>
+              <S18>Tech Stack:</S18> JavaScript, Canvas
             </P16>
           </ProjectItem>
-          <ProjectItem href='https://github.com/alexandriaroberts/Nasa-API'>
+          <ProjectItem href='https://codepen.io/iamlexieonearth/pen/vwPRPY'>
             <H4>Nasa API VueJS</H4>
             <P16>
-              This project got me my first Codepen featured, doen in VueJs with
-              Nasa API Languages:VueJS, CSS, Nasa API
+              This project got me my first Codepen featured, done in VueJs with
+              Nasa API.
+            </P16>
+            <P16>
+              <S18>Tech Stack:</S18> VueJS, CSS, Nasa API
             </P16>
           </ProjectItem>
         </div>
