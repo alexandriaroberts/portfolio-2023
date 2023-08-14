@@ -10,39 +10,41 @@ export type CardProps = {
 };
 
 export const ProjectCard = ({ href, image, children, ...props }: CardProps) => (
-  <a
-    href={href}
-    target='_blank'
-    rel='noreferrer'
-    sx={{ textDecoration: 'none', color: 'text' }}
-  >
-    <div
-      sx={{
-        mb: ['8px'],
-        aspectRatio: '1.7 / 1',
-        overflow: 'hidden',
-        pointerEvents: 'none',
-      }}
-      {...props}
+  <div>
+    <a
+      href={href}
+      target='_blank'
+      rel='noreferrer'
+      sx={{ textDecoration: 'none', color: 'text' }}
     >
-      <img
-        src={image}
-        alt=''
+      <div
         sx={{
-          position: 'absolute',
-          left: 0,
-          top: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          borderRadius: '4px',
-          'a:hover &': {
-            transform: `scale(1.01)`,
-          },
-          transition: 'all 0.3s ease',
+          mb: ['8px'],
+          aspectRatio: '1.7 / 1',
+          overflow: 'hidden',
+          pointerEvents: 'none',
         }}
-      />
-    </div>
+        {...props}
+      >
+        <img
+          src={image}
+          alt=''
+          sx={{
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            borderRadius: '4px',
+            'a:hover &': {
+              transform: `scale(1.01)`,
+            },
+            transition: 'all 0.3s ease',
+          }}
+        />
+      </div>
+    </a>
     <P
       sx={{
         mt: '16px',
@@ -55,5 +57,5 @@ export const ProjectCard = ({ href, image, children, ...props }: CardProps) => (
     >
       {children}
     </P>
-  </a>
+  </div>
 );

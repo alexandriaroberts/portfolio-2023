@@ -273,7 +273,7 @@ export default function Home() {
         />
         <img
           className='content_img'
-          src='../images/reshot-icon-programming-laptop-3UPSGZELA2.svg'
+          src='../images/laptop.svg'
           alt=''
           sx={{
             position: 'absolute',
@@ -287,7 +287,7 @@ export default function Home() {
         />
         <img
           className='content_img'
-          src='../images/woman-lifting-weights-medium-skin-tone-svgrepo-com.svg'
+          src='../images/woman-lifting-weights.svg'
           alt=''
           sx={{
             position: 'absolute',
@@ -301,7 +301,7 @@ export default function Home() {
         />
         <img
           className='content_img'
-          src='../images/reshot-icon-books-9KHFUX6M85.svg'
+          src='../images/books.svg'
           alt=''
           sx={{
             position: 'absolute',
@@ -315,7 +315,7 @@ export default function Home() {
         />
         <img
           className='content_img'
-          src='../images/reshot-icon-cooking-6SXQEAC4MT.svg'
+          src='../images/cooking.svg'
           alt=''
           sx={{
             position: 'absolute',
@@ -359,7 +359,7 @@ export default function Home() {
             JavaScript, CSS and TypeScript with focus on usability and love
             learning new tech.
           </P>
-          <Socials sx={{ mt: '24px' }} />
+          <Socials sx={{ mt: '24px' }} color='primary' />
         </div>
         <div
           sx={{

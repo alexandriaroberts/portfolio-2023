@@ -112,6 +112,24 @@ export const P16 = ({ children, className, ...props }: TypographyProps) => (
   </p>
 );
 
+export const S18 = ({ children, className, ...props }: TypographyProps) => (
+  <span
+    className={classnames(className)}
+    sx={{
+      fontFamily: 'Lora',
+      fontSize: ['14px', null, '18px'],
+      fontStyle: 'italic',
+      fontWeight: '400',
+      lineHeight: ['16px', null, '21px'],
+      letterSpacing: '2px',
+      color: 'secondaryOrange',
+    }}
+    {...props}
+  >
+    {children}
+  </span>
+);
+
 export const S20 = ({ children, className, ...props }: TypographyProps) => (
   <span
     className={classnames(className)}
