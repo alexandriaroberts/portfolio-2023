@@ -2,6 +2,7 @@ import { H2, H4, S20, P } from '../components/Typography';
 import { Container } from '../components/Container';
 import { HeadingDecoration } from '../components/HeadingDecoration';
 import { Divider } from '../components/Divider';
+
 export default function Experinece() {
   function translate(
     arg0: string
@@ -28,7 +29,7 @@ export default function Experinece() {
         <div
           sx={{
             display: 'grid',
-            gridTemplateColumns: ['0.1fr 0.9fr', null, '225fr 840fr'],
+            gridTemplateColumns: ['1fr', '0.2fr 0.8fr', null, '225fr 840fr'],
             maxWidth: '840px',
             m: '0 auto',
           }}
@@ -38,6 +39,7 @@ export default function Experinece() {
             width='1px'
             height='100%'
             sx={{
+              opacity: ['0', 1],
               gridColumn: 1,
               position: 'absolute',
               left: ['25px', null, '100px', '150px'],
@@ -69,8 +71,8 @@ export default function Experinece() {
                 using storybook in NextJS, TypeScript.
               </P>
               <P>
-                - Collaborated with colleagues on a complex project to organize
-                resources and enable the delivery of a project on time.{' '}
+                - Organized resources and tasks on a complex project to enable
+                on-time delivery.
               </P>
               <P>
                 - Refactored and optimized existing code. Optimised performance
@@ -101,8 +103,9 @@ export default function Experinece() {
             >
               <P>
                 - Working as an intern in my first crypto/proper front-end
-                developer job where I would use React etc. , I learned a lot
-                from the seniors and the team, it was a great experience!
+                developer job where I would use React, Ethers.JS & SASS. I
+                learned a lot from the seniors and the team, it was a great
+                experience!
               </P>
               <P>
                 - Worked on creating a marketing site, one page apps for trends
@@ -116,11 +119,6 @@ export default function Experinece() {
               <P>
                 - Working with storybook, creating web pages to show different
                 types of protocols data and tracking.
-              </P>
-              <P>
-                - Participated in daily stand ups remotely, sharing the things
-                we achieved on the day before and our to do lists for the day
-                while collaborating with other team members remotely.
               </P>
             </div>
           </div>
@@ -175,10 +173,7 @@ export default function Experinece() {
                 - Developed new user-facing features in languages such as HTML5,
                 CSS and JavaScript.
               </P>
-              <P>
-                - Learned and worked on creating email designs using Foundation
-                Zurb for clients.
-              </P>
+              <P>- Created email designs.</P>
               <P>
                 - Created landing pages using Bootstrap and some Jquery on old
                 projects. As well developed sites using Divi in Wordpress.
@@ -186,10 +181,6 @@ export default function Experinece() {
               <P>
                 - Optimizing applications for maximum speed and scalability
                 using Google Developer Tools and Lighthouse.
-              </P>
-              <P>
-                - Used Git extensively on all the projects, also used Bitbucket
-                as part of the companies version control tool.
               </P>
               <P>
                 - Participated in daily team meetings, sharing the things we
