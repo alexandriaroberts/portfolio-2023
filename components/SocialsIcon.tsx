@@ -1,4 +1,4 @@
-export type SocialsIconProps = {
+type SocialsIconProps = {
   width?: {};
   height?: string;
   color?: string;
@@ -26,6 +26,7 @@ export const SocialsIcon = ({
       display: 'flex',
       gap: '32px',
       color: color,
+      ml: '8px',
       a: {
         color: 'currentColor',
         transition: 'all 0.3s ease',

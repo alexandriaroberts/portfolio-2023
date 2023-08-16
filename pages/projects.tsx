@@ -1,9 +1,10 @@
-import { H2, H4, P, P16, S18 } from '../components/Typography';
+import { H2, H4, P16, S18 } from '../components/Typography';
 import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';
 import { HeadingDecoration } from '../components/HeadingDecoration';
 import { ProjectItem } from '../components/ProjectItem';
 import { SocialsIcon } from '../components/SocialsIcon';
+import { Tag } from '../components/Tag';
 
 export default function Projects() {
   return (
@@ -41,16 +42,27 @@ export default function Projects() {
               The side project which uses Alechemy&apos;s SDK to display
               NFT&apos;s from Ethereum addresses.
             </P16>
-            <P16>
-              <S18>Tech Stack:</S18> NextJs, Alchemy SDK, Theme-UI
-            </P16>
-            <div sx={{ display: 'flex' }}>
-              <S18>Link to Code here:</S18>
+            <div sx={{ display: 'flex', mt: '16px' }}>
+              <S18>Link to Code here: </S18>
               <SocialsIcon
                 href='https://github.com/alexandriaroberts/display-nfts'
                 xlinkHref='../images/sprite.svg#github'
                 title='Github'
               />
+            </div>
+            <div
+              sx={{
+                mt: '16px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+              }}
+            >
+              <Tag>Next</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>Web3</Tag>
+              <Tag>Alchemy SDK</Tag>
+              <Tag>Theme UI</Tag>
             </div>
           </ProjectCard>
           <ProjectCard
@@ -62,9 +74,19 @@ export default function Projects() {
               I helped build this new blog app while we started from scratch, it
               was an absolutely fun work to do while at Graph Protocol.{' '}
             </P16>
-            <P16>
-              <S18>Tech Stack:</S18> NextJs, TypeScript, Theme-UI
-            </P16>
+            <div
+              sx={{
+                mt: '16px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+              }}
+            >
+              <Tag>Next</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>Web3</Tag>
+              <Tag>Theme UI</Tag>
+            </div>
           </ProjectCard>
           <ProjectCard
             href='https://codepen.io/iamlexieonearth/full/QYNmEa'
@@ -75,16 +97,25 @@ export default function Projects() {
               This is fun little VueJS game, you have to click on the flower to
               get the points.
             </P16>
-            <P16>
-              <S18>Tech Stack:</S18> VueJS, SCSS/SASS, Netlify
-            </P16>
-            <div sx={{ display: 'flex' }}>
+            <div sx={{ display: 'flex', mt: '16px' }}>
               <S18>Link to Code here:</S18>
               <SocialsIcon
                 href='https://github.com/alexandriaroberts/FlowerGame-VueJS'
                 xlinkHref='../images/sprite.svg#github'
                 title='Github'
               />
+            </div>
+            <div
+              sx={{
+                mt: '16px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+              }}
+            >
+              <Tag>VueJS</Tag>
+              <Tag>SCSS/SASS</Tag>
+              <Tag>Netlify</Tag>
             </div>
           </ProjectCard>
           <ProjectCard
@@ -95,17 +126,25 @@ export default function Projects() {
             <P16>
               Info:Helped build this new app while we started from scratch,{' '}
             </P16>
-            <P16>
-              <S18>Tech Stack:</S18> ReactJS, Netlify, Netlify hosting,
-              Restcountries.eu API
-            </P16>
-            <div sx={{ display: 'flex' }}>
+            <div sx={{ display: 'flex', mt: '16px' }}>
               <S18>Link to Code here:</S18>
               <SocialsIcon
                 href='https://github.com/alexandriaroberts/react-form-with-api'
                 xlinkHref='../images/sprite.svg#github'
                 title='Github'
               />
+            </div>
+            <div
+              sx={{
+                mt: '16px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+              }}
+            >
+              <Tag>React</Tag>
+              <Tag>SCSS/SASS</Tag>
+              <Tag>Restcountries.eu API</Tag>
             </div>
           </ProjectCard>
         </div>

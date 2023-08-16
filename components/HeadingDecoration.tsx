@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { HTMLAttributes } from 'react';
 
-export type HeadingDecorationProps = {
+type HeadingDecorationProps = {
   left: {};
   width: {};
 } & Omit<HTMLAttributes<HTMLElement>, 'children'>;

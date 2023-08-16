@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-export type NavLinkProps = {
+type NavLinkProps = {
   href: string;
   target?: string;
   children: ReactNode | string;

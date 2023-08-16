@@ -1,7 +1,7 @@
 import { Container } from '../Container';
 import { NavLink } from './NavLink';
 
-export type NavigationProps = {
+type NavigationProps = {
   className?: string;
 };
 

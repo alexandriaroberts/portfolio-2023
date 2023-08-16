@@ -2,9 +2,10 @@ import { gsap, Expo, Power1, Quint } from 'gsap';
 
 import { Container } from '../components/Container';
 import { Divider } from '../components/Divider';
-import { H1, H2, P } from '../components/Typography';
+import { H1, H2, P, P16 } from '../components/Typography';
 import { Socials } from '../components/Socials';
 import { HeadingDecoration } from '../components/HeadingDecoration';
+import { Tag } from '../components/Tag';
 
 export default function Home() {
   if (typeof document !== 'undefined') {
@@ -360,6 +361,33 @@ export default function Home() {
             learning new tech.
           </P>
           <Socials sx={{ mt: '24px' }} color='primary' />
+          <div>
+            <div
+              sx={{
+                mt: '32px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+              }}
+            >
+              <Tag>HTML</Tag>
+              <Tag>CSS/SCSS</Tag>
+              <Tag>React</Tag>
+              <Tag>Next</Tag>
+              <Tag>VueJS</Tag>
+              <Tag>JavaScript</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>Web3</Tag>
+              <Tag>Alchemy SDK</Tag>
+              <Tag>Theme UI</Tag>
+              <Tag>Tailwind</Tag>
+              <Tag>SASS</Tag>
+              <Tag>gsap</Tag>
+              <Tag>svg</Tag>
+              <Tag>Git</Tag>
+              <Tag>BitBucket</Tag>
+            </div>
+          </div>
         </div>
         <div
           sx={{

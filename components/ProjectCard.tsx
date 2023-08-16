@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 import { P } from '../components/Typography';
 
-export type CardProps = {
+type CardProps = {
   href: string;
   image: string;
   children: ReactNode;

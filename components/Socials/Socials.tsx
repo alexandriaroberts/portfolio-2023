@@ -1,4 +1,4 @@
-export type SocialProps = {
+type SocialProps = {
   width?: {};
   height?: string;
   color?: string;

@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 import { Divider } from './Divider';
 
-export type ProjectItemProps = {
+type ProjectItemProps = {
   href: string;
   children: ReactNode;
   className?: string;

@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { HTMLAttributes } from 'react';
 
-export type DividerProps = {
+type DividerProps = {
   color?: 'text' | 'primary';
   width?: string;
   height?: string;

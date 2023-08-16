@@ -4,14 +4,6 @@ import { HeadingDecoration } from '../components/HeadingDecoration';
 import { Divider } from '../components/Divider';
 
 export default function Experinece() {
-  function translate(
-    arg0: string
-  ): import('theme-ui').StylePropertyValue<
-    import('csstype').Property.Transform | undefined
-  > {
-    throw new Error('Function not implemented.');
-  }
-
   return (
     <Container>
       <div sx={{ my: ['104px', null, '164px'] }}>
@@ -158,7 +150,7 @@ export default function Experinece() {
             }}
           >
             <H4>
-              Joyjet Digital Space Agency
+              Joyjet Digital Space Agency{' '}
               <S20>(Front-End Developer, Sept 2019 - Feb 2020 )</S20>
             </H4>
             <div
