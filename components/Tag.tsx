@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { P16 } from './Typography';
 
-export type TagProps = {
+type TagProps = {
   children?: ReactNode;
   className?: string;
 };
