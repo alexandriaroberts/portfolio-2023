@@ -123,9 +123,7 @@ export default function Projects() {
             image='../projects/react-form.png'
           >
             Graph Protocols Blog
-            <P16>
-              Info:Helped build this new app while we started from scratch,{' '}
-            </P16>
+            <P16>Helped build this new blog app we started from scratch.</P16>
             <div sx={{ display: 'flex', mt: '16px' }}>
               <S18>Link to Code here:</S18>
               <SocialsIcon
