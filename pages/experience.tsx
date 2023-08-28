@@ -1,4 +1,4 @@
-import { H2, H4, S20, P } from '../components/Typography';
+import { H2, H4, H5, S20, P } from '../components/Typography';
 import { Container } from '../components/Container';
 import { HeadingDecoration } from '../components/HeadingDecoration';
 import { Divider } from '../components/Divider';
@@ -17,6 +17,21 @@ export default function Experinece() {
               />
             </span>
           </H2>
+          <H5 sx={{ mb: '64px', textAlign: 'center' }}>
+            You can also download my cv{' '}
+            <a
+              href='/AlexandriaRobertsCV.pdf'
+              download
+              sx={{
+                color: 'secondaryOrange',
+                textDecoration: 'none',
+                fontStyle: 'italic',
+              }}
+            >
+              here
+            </a>{' '}
+            please! 📇
+          </H5>
         </div>
         <div
           sx={{

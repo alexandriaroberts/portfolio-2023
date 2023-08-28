@@ -377,6 +377,7 @@ export default function Home() {
               <Tag>VueJS</Tag>
               <Tag>JavaScript</Tag>
               <Tag>TypeScript</Tag>
+              <Tag>Storybook</Tag>
               <Tag>Web3</Tag>
               <Tag>Alchemy SDK</Tag>
               <Tag>Theme UI</Tag>
