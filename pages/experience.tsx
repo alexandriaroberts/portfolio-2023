@@ -20,7 +20,7 @@ export default function Experinece() {
           <H5 sx={{ mb: '64px', textAlign: 'center' }}>
             You can also download my cv{' '}
             <a
-              href='/AlexandriaRobertsCV.pdf'
+              href='/AlexandriaRoberts-CV.pdf'
               download
               sx={{
                 color: 'secondaryOrange',
