@@ -1,15 +1,20 @@
 import { ReactNode } from 'react';
 
-import { P } from '../components/Typography';
-
 type CardProps = {
   href: string;
   image: string;
+  alt: string;
   children: ReactNode;
   className?: string;
 };
 
-export const ProjectCard = ({ href, image, children, ...props }: CardProps) => (
+export const ProjectCard = ({
+  href,
+  image,
+  alt,
+  children,
+  ...props
+}: CardProps) => (
   <div>
     <a
       href={href}
@@ -28,7 +33,7 @@ export const ProjectCard = ({ href, image, children, ...props }: CardProps) => (
       >
         <img
           src={image}
-          alt=''
+          alt={alt}
           sx={{
             position: 'absolute',
             left: 0,
@@ -45,8 +50,14 @@ export const ProjectCard = ({ href, image, children, ...props }: CardProps) => (
         />
       </div>
     </a>
-    <P
+    <div
       sx={{
+        fontFamily: 'Noto Serif',
+        fontSize: ['16px', null, '20px'],
+        fontStyle: 'normal',
+        fontWeight: '500',
+        lineHeight: ['28px', null, '37px'],
+        letterSpacing: '1px',
         mt: '16px',
         opacity: 0.8,
         'a:hover &': {
@@ -56,6 +67,6 @@ export const ProjectCard = ({ href, image, children, ...props }: CardProps) => (
       }}
     >
       {children}
-    </P>
+    </div>
   </div>
 );

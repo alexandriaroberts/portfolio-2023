@@ -36,6 +36,7 @@ export default function Projects() {
           <ProjectCard
             href='https://display-nfts.netlify.app/'
             image='../projects/display-nfts.png'
+            alt='showing screenshot of display nfts app'
           >
             Display of NFT&apos;s from ERC-721 address
             <P16>
@@ -68,6 +69,7 @@ export default function Projects() {
           <ProjectCard
             href='https://thegraph.com/blog/'
             image='../projects/graph-blog.png'
+            alt='graph blogs image'
           >
             Graph Protocols Blog
             <P16>
@@ -91,6 +93,7 @@ export default function Projects() {
           <ProjectCard
             href='https://codepen.io/iamlexieonearth/full/QYNmEa'
             image='../projects/flower-game.png'
+            alt='flower games full screen'
           >
             Flower Game in VueJS
             <P16>
@@ -121,6 +124,7 @@ export default function Projects() {
           <ProjectCard
             href='https://react-form-with-api.netlify.app/'
             image='../projects/react-form.png'
+            alt='react forms screenshot'
           >
             Graph Protocols Blog
             <P16>Helped build this new blog app we started from scratch.</P16>
