@@ -17,7 +17,7 @@ export default function Experinece() {
               />
             </span>
           </H2>
-          <H5 sx={{ mb: '64px', textAlign: 'center' }}>
+          {/* <H5 sx={{ mb: '64px', textAlign: 'center' }}>
             You can also download my cv{' '}
             <a
               href='/AlexandriaRoberts-CV.pdf'
@@ -31,7 +31,7 @@ export default function Experinece() {
               here
             </a>{' '}
             please! 📇
-          </H5>
+          </H5> */}
         </div>
         <div
           sx={{
