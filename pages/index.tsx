@@ -356,9 +356,9 @@ export default function Home() {
               my: '20px',
             }}
           >
-            Is a Front-End Developer with strong skills in React, NextJS,
-            JavaScript, CSS and TypeScript with focus on usability and love
-            learning new tech.
+            Is a Full-Stack Developer with strong skills in React, NextJS,
+            MongoDB, Express, NodeJS, JavaScript, CSS and TypeScript with focus
+            on usability and love learning new tech.
           </P>
           <Socials sx={{ mt: '24px' }} color='primary' />
           <div>
@@ -370,13 +370,16 @@ export default function Home() {
                 gap: '10px',
               }}
             >
-              <Tag>HTML</Tag>
-              <Tag>CSS/SCSS</Tag>
-              <Tag>React</Tag>
-              <Tag>Next</Tag>
+              <Tag>ReactJS</Tag>
+              <Tag>NextJS</Tag>
               <Tag>VueJS</Tag>
               <Tag>JavaScript</Tag>
               <Tag>TypeScript</Tag>
+              <Tag>NodeJS</Tag>
+              <Tag>ExpressJS</Tag>
+              <Tag>MongoDB</Tag>
+              <Tag>HTML</Tag>
+              <Tag>CSS/SCSS</Tag>
               <Tag>Storybook</Tag>
               <Tag>Web3</Tag>
               <Tag>Alchemy SDK</Tag>
@@ -448,18 +451,19 @@ export default function Home() {
         </H2>
         <div sx={{ maxWidth: '840px', mx: 'auto', mb: ['104px', '164px'] }}>
           <P>
-            Hello, I am Lexie, an UI Engineer/Front-End Developer based in Bali.
-            Looking for my next opportunity.
+            Hello, I am Lexie, an UI Engineer/Full-Stack Developer based in
+            Bali. Looking for my next opportunity.
           </P>
           <P sx={{ mt: '32px' }}>
-            I love working with CSS, JavaScript, React and absolutely love being
-            in crypto space. Anything CSS/JavaScript and I love digging into it
-            more! I also love learning new technologies and have worked on
-            variety of projects for work and on personal projects, where I could
-            quickly pick up new frameworks and languages. Please look at my
-            projects section. In 2020, I started learning to surf in my spare
-            time, and it&apos;s such a slow progress, so I have also started
-            working out a lot which is so much fun.
+            I love working with CSS, JavaScript, React, MongoDB NodeJS and
+            absolutely love being in crypto space. Anything CSS/JavaScript and I
+            love digging into it more! I also love learning new technologies and
+            have worked on variety of projects for work and on personal
+            projects, where I could quickly pick up new frameworks and
+            languages. Please look at my projects section. In 2020, I started
+            learning to surf in my spare time, and it&apos;s such a slow
+            progress, so I have also started working out a lot which is so much
+            fun.
           </P>
           <P sx={{ mt: '32px' }}>
             If you would like to find out more about me, my skills and how I can
