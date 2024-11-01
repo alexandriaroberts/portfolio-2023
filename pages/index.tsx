@@ -451,8 +451,8 @@ export default function Home() {
         </H2>
         <div sx={{ maxWidth: '840px', mx: 'auto', mb: ['104px', '164px'] }}>
           <P>
-            Hello, I am Lexie, an UI Engineer/Full-Stack Developer based in
-            Bali. Looking for my next opportunity.
+            Hello, I am Lexie, a Full-Stack Developer based in Bali. Looking for
+            my next opportunity.
           </P>
           <P sx={{ mt: '32px' }}>
             I love working with CSS, JavaScript, React, MongoDB NodeJS and
