@@ -1,4 +1,4 @@
-import { H2, H4, P16, S18 } from '../components/Typography';
+import { H2, H4, P, S18 } from '../components/Typography';
 import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';
 import { HeadingDecoration } from '../components/HeadingDecoration';
@@ -34,15 +34,50 @@ export default function Projects() {
           }}
         >
           <ProjectCard
+            href='https://www.diversitychain.xyz/'
+            image='../projects/diversity.png'
+            alt='showing screenshot of display nfts app'
+          >
+            DiversityChain to help people get great jobs in crypto
+            <P>
+              Project is done done in NextJS, TailwindCSS, MongoDB, NodeJS and
+              Express. A bit of chatGPT and web3.
+            </P>
+            {/* <div sx={{ display: 'flex', mt: '16px' }}>
+              <S18>Link to Code here: </S18>
+              <SocialsIcon
+                href='https://github.com/alexandriaroberts/display-nfts'
+                xlinkHref='../images/sprite.svg#github'
+                title='Github'
+              />
+            </div> */}
+            <div
+              sx={{
+                mt: '16px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+              }}
+            >
+              <Tag>NextJS</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>Express</Tag>
+              <Tag>MongoDB</Tag>
+              <Tag>TailwindCSS</Tag>
+              <Tag>NodeJS</Tag>
+              <Tag>ChatGPT</Tag>
+            </div>
+          </ProjectCard>
+          <ProjectCard
             href='https://display-nfts.netlify.app/'
             image='../projects/display-nfts.png'
             alt='showing screenshot of display nfts app'
           >
             Display of NFT&apos;s from ERC-721 address
-            <P16>
+            <P>
               The side project which uses Alechemy&apos;s SDK to display
               NFT&apos;s from Ethereum addresses.
-            </P16>
+            </P>
             <div sx={{ display: 'flex', mt: '16px' }}>
               <S18>Link to Code here: </S18>
               <SocialsIcon
@@ -72,10 +107,10 @@ export default function Projects() {
             alt='graph blogs image'
           >
             Graph Protocols Blog
-            <P16>
+            <P>
               I helped build this new blog app while we started from scratch, it
               was an absolutely fun work to do while at Graph Protocol.{' '}
-            </P16>
+            </P>
             <div
               sx={{
                 mt: '16px',
@@ -96,10 +131,10 @@ export default function Projects() {
             alt='flower games full screen'
           >
             Flower Game in VueJS
-            <P16>
+            <P>
               This is fun little VueJS game, you have to click on the flower to
               get the points.
-            </P16>
+            </P>
             <div sx={{ display: 'flex', mt: '16px' }}>
               <S18>Link to Code here:</S18>
               <SocialsIcon
@@ -121,13 +156,13 @@ export default function Projects() {
               <Tag>Netlify</Tag>
             </div>
           </ProjectCard>
-          <ProjectCard
+          {/* <ProjectCard
             href='https://react-form-with-api.netlify.app/'
             image='../projects/react-form.png'
             alt='react forms screenshot'
           >
-            Graph Protocols Blog
-            <P16>Helped build this new blog app we started from scratch.</P16>
+          React
+            <P>Helped build this new blog app we started from scratch.</P>
             <div sx={{ display: 'flex', mt: '16px' }}>
               <S18>Link to Code here:</S18>
               <SocialsIcon
@@ -148,7 +183,7 @@ export default function Projects() {
               <Tag>SCSS/SASS</Tag>
               <Tag>Restcountries.eu API</Tag>
             </div>
-          </ProjectCard>
+          </ProjectCard> */}
         </div>
       </div>
       <div
@@ -178,23 +213,23 @@ export default function Projects() {
         >
           <ProjectItem href='https://codepen.io/iamlexieonearth/full/KEoMye'>
             <H4>Space Game</H4>
-            <P16>
+            <P>
               This is a space game using JavaScript and Canvas, you have to use
               your arrow keys to catch an alien by moving the space man
-            </P16>
-            <P16>
+            </P>
+            <P>
               <S18>Tech Stack:</S18> JavaScript, Canvas
-            </P16>
+            </P>
           </ProjectItem>
           <ProjectItem href='https://codepen.io/iamlexieonearth/pen/vwPRPY'>
             <H4>Nasa API VueJS</H4>
-            <P16>
+            <P>
               This project got me my first Codepen featured, done in VueJs with
               Nasa API.
-            </P16>
-            <P16>
+            </P>
+            <P>
               <S18>Tech Stack:</S18> VueJS, CSS, Nasa API
-            </P16>
+            </P>
           </ProjectItem>
         </div>
       </div>
