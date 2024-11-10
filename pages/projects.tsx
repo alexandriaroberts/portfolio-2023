@@ -65,7 +65,6 @@ export default function Projects() {
               <Tag>MongoDB</Tag>
               <Tag>TailwindCSS</Tag>
               <Tag>NodeJS</Tag>
-              <Tag>ChatGPT</Tag>
             </div>
           </ProjectCard>
           <ProjectCard
