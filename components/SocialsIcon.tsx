@@ -7,7 +7,7 @@ type SocialsIconProps = {
   color?: string;
   hoverColor?: string;
   xlinkHref: string;
-  onClick: () => void;
+  href: string;
   title: string;
   className?: string;
 };
@@ -19,34 +19,41 @@ export const SocialsIcon = ({
   hoverColor = 'secondaryOrange',
   title,
   xlinkHref,
-  onClick,
+  href,
   className,
   ...props
-}: SocialsIconProps) => (
-  <div
-    onClick={onClick}
-    role='button'
-    tabIndex={0}
-    sx={{
-      display: 'flex',
-      cursor: 'pointer',
-      color: 'currentColor',
-      transition: 'all 0.3s ease',
-      '&:hover': {
-        color: hoverColor,
-        transform: 'scale(1.1)',
-      },
-      svg: {
-        width: width,
-        height: height,
-      },
-    }}
-  >
-    <svg viewBox='0 0 16 16'>
-      <title>{title}</title>
-      <use xlinkHref={xlinkHref}></use>
-    </svg>
-  </div>
-);
+}: SocialsIconProps) => {
+  const handleClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent triggering ProjectCard's click event
+    window.open(href, '_blank', 'noopener,noreferrer');
+  };
 
-export default SocialsIcon;
+  return (
+    <Box
+      className={className}
+      onClick={handleClick}
+      sx={{
+        display: 'flex',
+        gap: '32px',
+        color: color,
+        ml: '8px',
+        cursor: 'pointer',
+        transition: 'all 0.3s ease',
+        '&:hover': {
+          color: hoverColor,
+          transform: 'scale(1.1)',
+        },
+        svg: {
+          width: width,
+          height: height,
+        },
+      }}
+      {...props}
+    >
+      <svg viewBox='0 0 16 16'>
+        <title>{title}</title>
+        <use xlinkHref={xlinkHref}></use>
+      </svg>
+    </Box>
+  );
+};

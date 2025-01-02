@@ -13,27 +13,26 @@ export const ProjectCard = ({
   image,
   alt,
   children,
-}: ProjectCardProps) => (
-  <Box
-    sx={{
-      borderRadius: '12px',
-      overflow: 'hidden',
-      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-      transition: 'all 0.3s ease',
-      '&:hover': {
-        transform: 'translateY(-5px)',
-        boxShadow: '0 6px 25px rgba(0, 0, 0, 0.15)',
-      },
-    }}
-  >
-    <a
-      href={href}
-      target='_blank'
-      rel='noopener noreferrer'
+}: ProjectCardProps) => {
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    // Prevent navigation if the click is on a child anchor tag
+    if ((e.target as HTMLElement).closest('a')) return;
+    window.open(href, '_blank', 'noopener,noreferrer');
+  };
+
+  return (
+    <Box
+      onClick={handleClick}
       sx={{
-        textDecoration: 'none',
-        color: 'text',
-        display: 'block',
+        borderRadius: '12px',
+        overflow: 'hidden',
+        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+        transition: 'all 0.3s ease',
+        cursor: 'pointer',
+        '&:hover': {
+          transform: 'translateY(-5px)',
+          boxShadow: '0 6px 25px rgba(0, 0, 0, 0.15)',
+        },
       }}
     >
       <Box sx={{ position: 'relative', paddingTop: '56.25%' }}>
@@ -55,6 +54,6 @@ export const ProjectCard = ({
         />
       </Box>
       <Box sx={{ p: 4 }}>{children}</Box>
-    </a>
-  </Box>
-);
+    </Box>
+  );
+};
