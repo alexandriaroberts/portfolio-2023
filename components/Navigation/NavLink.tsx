@@ -16,7 +16,6 @@ export const NavLink = ({ href, target, children, ...props }: NavLinkProps) => {
         fontFamily: 'body',
         fontStyle: 'medium',
         lineHeight: '30px',
-        letterSpacing: '1px',
         textDecoration: 'none',
         color: 'text',
         transition: 'all 0.3s ease',

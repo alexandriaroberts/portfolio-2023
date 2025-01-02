@@ -1,15 +1,18 @@
-import { Theme } from 'theme-ui';
+import type { Theme } from 'theme-ui';
 
 export const theme: Theme = {
   fonts: {
     body: 'Noto Serif, serif',
-    heading: 'Lora, Noto-serif',
+    heading: 'Lora',
   },
   colors: {
-    text: '#223A31',
-    background: '#Fdfdfd',
-    primary: '#F18019',
-    secondaryOrange: '#FF9A19',
+    text: '#1A3A34',
+    background: '#F0F7F4',
+    primary: '#F7931A',
+    secondary: '#4D4D4D',
+    accent: '#9EE6CF',
+    highlight: '#FFE0B2',
+    muted: '#E0E0E0',
   },
   breakpoints: ['641px', '749px', '1024px', '1288px'],
   styles: {

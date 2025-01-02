@@ -8,7 +8,7 @@ export const Footer = () => (
   <footer
     sx={{
       height: ['408px', null, '604px'],
-      bg: 'secondaryOrange',
+      bg: 'primary',
     }}
   >
     <div

@@ -1,12 +1,24 @@
-import { H2, H4, P, S18 } from '../components/Typography';
+import { useState, useEffect } from 'react';
+import { H2, H4, H6, P, P16, S18 } from '../components/Typography';
 import { Container } from '../components/Container';
 import { ProjectCard } from '../components/ProjectCard';
 import { HeadingDecoration } from '../components/HeadingDecoration';
 import { ProjectItem } from '../components/ProjectItem';
 import { SocialsIcon } from '../components/SocialsIcon';
 import { Tag } from '../components/Tag';
+import { Box } from 'theme-ui';
 
 export default function Projects() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null; // or a loading spinner
+  }
+
   return (
     <Container>
       <div sx={{ my: ['104px', '164px'] }}>
@@ -19,18 +31,18 @@ export default function Projects() {
             />
           </span>
         </H2>
-        <div
+        <Box
           sx={{
             display: 'grid',
             gridTemplateColumns: [
               '1fr',
-              'repeat(auto-fill, minmax(min(259px, 100%), 1fr))',
+              'repeat(2, 1fr)',
               null,
-              'repeat(auto-fill, minmax(min(369px, 100%), 1fr))',
+              'repeat(3, 1fr)',
             ],
-            gap: ['64px', '104px'],
-            mt: ['64px', null, '104px'],
-            pb: ['364px', '404px', '504px'],
+            gap: ['32px', '40px', '48px'],
+            mt: ['40px', '60px', '80px'],
+            pb: ['64px', '80px', '296px'],
           }}
         >
           <ProjectCard
@@ -38,19 +50,13 @@ export default function Projects() {
             image='../projects/diversity.png'
             alt='showing screenshot of display nfts app'
           >
-            DiversityChain to help people get great jobs in crypto
-            <P>
+            <H6 sx={{ mb: '12px' }}>
+              DiversityChain to help people get great jobs in crypto
+            </H6>
+            <P16>
               Project is done done in NextJS, TailwindCSS, MongoDB, NodeJS and
               Express. A bit of chatGPT and web3.
-            </P>
-            {/* <div sx={{ display: 'flex', mt: '16px' }}>
-              <S18>Link to Code here: </S18>
-              <SocialsIcon
-                href='https://github.com/alexandriaroberts/display-nfts'
-                xlinkHref='../images/sprite.svg#github'
-                title='Github'
-              />
-            </div> */}
+            </P16>
             <div
               sx={{
                 mt: '16px',
@@ -72,11 +78,13 @@ export default function Projects() {
             image='../projects/display-nfts.png'
             alt='showing screenshot of display nfts app'
           >
-            Display of NFT&apos;s from ERC-721 address
-            <P>
+            <H6 sx={{ mb: '12px' }}>
+              Display of NFT&apos;s from ERC-721 address
+            </H6>
+            <P16>
               The side project which uses Alechemy&apos;s SDK to display
               NFT&apos;s from Ethereum addresses.
-            </P>
+            </P16>
             <div sx={{ display: 'flex', mt: '16px' }}>
               <S18>Link to Code here: </S18>
               <SocialsIcon
@@ -105,11 +113,11 @@ export default function Projects() {
             image='../projects/graph-blog.png'
             alt='graph blogs image'
           >
-            Graph Protocols Blog
-            <P>
+            <H6 sx={{ mb: '12px' }}>Graph Protocols Blog App</H6>
+            <P16>
               I helped build this new blog app while we started from scratch, it
-              was an absolutely fun work to do while at Graph Protocol.{' '}
-            </P>
+              was an absolutely fun work to do while at Graph Protocol.
+            </P16>
             <div
               sx={{
                 mt: '16px',
@@ -125,15 +133,48 @@ export default function Projects() {
             </div>
           </ProjectCard>
           <ProjectCard
+            href='https://skin-video-analysis-tool.vercel.app/'
+            image='../projects/skin-test-tool.png'
+            alt='showing screenshot of display nfts app'
+          >
+            <H6 sx={{ mb: '12px' }}> Skin Video analysis tool Project </H6>
+            <P16>
+              This project is a web application designed to guide users through
+              capturing five images of skin diagnostic device, sending them to a
+              mock server, and displaying the results.
+            </P16>
+            <div sx={{ display: 'flex', mt: '16px' }}>
+              <S18>Link to Code here: </S18>
+              <SocialsIcon
+                href='https://github.com/alexandriaroberts/skin-video-analysis-tool'
+                xlinkHref='../images/sprite.svg#github'
+                title='Github'
+              />
+            </div>
+            <div
+              sx={{
+                mt: '16px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+              }}
+            >
+              <Tag>NextJS</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>TailwindCSS</Tag>
+              <Tag>NodeJS</Tag>
+            </div>
+          </ProjectCard>
+          <ProjectCard
             href='https://codepen.io/iamlexieonearth/full/QYNmEa'
             image='../projects/flower-game.png'
             alt='flower games full screen'
           >
-            Flower Game in VueJS
-            <P>
+            <H6 sx={{ mb: '12px' }}>Flower Game in VueJS</H6>
+            <P16>
               This is fun little VueJS game, you have to click on the flower to
               get the points.
-            </P>
+            </P16>
             <div sx={{ display: 'flex', mt: '16px' }}>
               <S18>Link to Code here:</S18>
               <SocialsIcon
@@ -183,7 +224,7 @@ export default function Projects() {
               <Tag>Restcountries.eu API</Tag>
             </div>
           </ProjectCard> */}
-        </div>
+        </Box>
       </div>
       <div
         sx={{
@@ -206,7 +247,7 @@ export default function Projects() {
             alignContent: 'center',
             px: ['32px', '64px'],
             mx: 'auto',
-            my: ['64px', null, '164px'],
+            my: ['64px', null, '64px'],
             maxWidth: '1288px',
           }}
         >

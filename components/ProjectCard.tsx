@@ -1,11 +1,11 @@
-import { ReactNode } from 'react';
+/** @jsxImportSource theme-ui */
+import { Box, Image } from 'theme-ui';
 
-type CardProps = {
+type ProjectCardProps = {
   href: string;
   image: string;
   alt: string;
-  children: ReactNode;
-  className?: string;
+  children: React.ReactNode;
 };
 
 export const ProjectCard = ({
@@ -13,60 +13,48 @@ export const ProjectCard = ({
   image,
   alt,
   children,
-  ...props
-}: CardProps) => (
-  <div>
+}: ProjectCardProps) => (
+  <Box
+    sx={{
+      borderRadius: '12px',
+      overflow: 'hidden',
+      boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+      transition: 'all 0.3s ease',
+      '&:hover': {
+        transform: 'translateY(-5px)',
+        boxShadow: '0 6px 25px rgba(0, 0, 0, 0.15)',
+      },
+    }}
+  >
     <a
       href={href}
       target='_blank'
-      rel='noreferrer'
-      sx={{ textDecoration: 'none', color: 'text' }}
+      rel='noopener noreferrer'
+      sx={{
+        textDecoration: 'none',
+        color: 'text',
+        display: 'block',
+      }}
     >
-      <div
-        sx={{
-          mb: ['8px'],
-          aspectRatio: '1.7 / 1',
-          overflow: 'hidden',
-          pointerEvents: 'none',
-        }}
-        {...props}
-      >
-        <img
+      <Box sx={{ position: 'relative', paddingTop: '56.25%' }}>
+        <Image
           src={image}
           alt={alt}
           sx={{
             position: 'absolute',
-            left: 0,
             top: 0,
+            left: 0,
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            borderRadius: '4px',
-            'a:hover &': {
-              transform: `scale(1.01)`,
+            transition: 'transform 0.3s ease',
+            '&:hover': {
+              transform: 'scale(1.05)',
             },
-            transition: 'all 0.3s ease',
           }}
         />
-      </div>
+      </Box>
+      <Box sx={{ p: 4 }}>{children}</Box>
     </a>
-    <div
-      sx={{
-        fontFamily: 'Noto Serif',
-        fontSize: ['16px', null, '20px'],
-        fontStyle: 'normal',
-        fontWeight: '500',
-        lineHeight: ['28px', null, '37px'],
-        letterSpacing: '1px',
-        mt: '16px',
-        opacity: 0.8,
-        'a:hover &': {
-          opacity: 1,
-        },
-        transition: 'all 0.3s ease',
-      }}
-    >
-      {children}
-    </div>
-  </div>
+  </Box>
 );

@@ -1,10 +1,13 @@
+/** @jsxImportSource theme-ui */
+import { Box } from 'theme-ui';
+
 type SocialsIconProps = {
   width?: {};
   height?: string;
   color?: string;
   hoverColor?: string;
   xlinkHref: string;
-  href: string;
+  onClick: () => void;
   title: string;
   className?: string;
 };
@@ -16,42 +19,34 @@ export const SocialsIcon = ({
   hoverColor = 'secondaryOrange',
   title,
   xlinkHref,
-  href,
+  onClick,
   className,
   ...props
 }: SocialsIconProps) => (
   <div
-    className={className}
+    onClick={onClick}
+    role='button'
+    tabIndex={0}
     sx={{
       display: 'flex',
-      gap: '32px',
-      color: color,
-      ml: '8px',
-      a: {
-        color: 'currentColor',
-        transition: 'all 0.3s ease',
-        '&:hover': {
-          color: hoverColor,
-          transform: 'scale(1.1)',
-        },
-        svg: {
-          width: width,
-          height: height,
-        },
+      cursor: 'pointer',
+      color: 'currentColor',
+      transition: 'all 0.3s ease',
+      '&:hover': {
+        color: hoverColor,
+        transform: 'scale(1.1)',
+      },
+      svg: {
+        width: width,
+        height: height,
       },
     }}
-    {...props}
   >
-    <a
-      href={href}
-      target='_blank'
-      rel='noopener noreferrer'
-      sx={{ display: 'flex' }}
-    >
-      <svg viewBox='0 0 16 16'>
-        <title>{title}</title>
-        <use xlinkHref={xlinkHref}></use>
-      </svg>
-    </a>
+    <svg viewBox='0 0 16 16'>
+      <title>{title}</title>
+      <use xlinkHref={xlinkHref}></use>
+    </svg>
   </div>
 );
+
+export default SocialsIcon;
