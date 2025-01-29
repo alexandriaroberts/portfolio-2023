@@ -46,6 +46,34 @@ export default function Projects() {
           }}
         >
           <ProjectCard
+            href='https://web3-wallet-dashboard-seven.vercel.app/'
+            image='../projects/dashboard.png'
+            alt='showing screenshot of display nfts app'
+          >
+            <H6 sx={{ mb: '12px' }}>Web3 Wallet Dashboard</H6>
+            <P16>
+              Web3 Wallet Dashboard is a modern, user-friendly interface for
+              interacting with blockchain wallets and decentralized applications
+              (dApps).
+            </P16>
+            <div
+              sx={{
+                mt: '16px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+              }}
+            >
+              <Tag>NextJS</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>wagmi</Tag>
+              <Tag>ethers.js</Tag>
+              <Tag>Viem</Tag>
+              <Tag>Alchemy SDK</Tag>
+              <Tag>MetaMask</Tag>
+            </div>
+          </ProjectCard>
+          <ProjectCard
             href='https://www.diversitychain.xyz/'
             image='../projects/diversity.png'
             alt='showing screenshot of display nfts app'
