@@ -426,7 +426,7 @@ export default function Home() {
             sx={{ maxWidth: '580px', height: '100%', mt: ['32px', '164px'] }}
           >
             <img
-              src='../profile.jpg'
+              src='../profile.png'
               alt='Head Shot of Lexie'
               sx={{
                 width: ['255px', null, '100%'],

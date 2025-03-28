@@ -46,6 +46,38 @@ export default function Projects() {
           }}
         >
           <ProjectCard
+            href='https://bitcoin-acadamy.vercel.app/'
+            image='../projects/bitcoin-academy.png'
+            alt='showing screenshot of bitcoin acadamy app'
+          >
+            <H6 sx={{ mb: '12px' }}>Bitcoin Acadamy</H6>
+            <P16>
+              A simple, interactive tutorial that teaches the basics of how
+              Bitcoin's digital signatures and ownership work.
+            </P16>
+            <div
+              sx={{
+                mt: '16px',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '10px',
+              }}
+            >
+              <Tag>NextJS</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>TailwindCSS</Tag>
+              <Tag>Framer Motion</Tag>
+            </div>
+            <div sx={{ display: 'flex', mt: '16px' }}>
+              <S18>Link to Code here: </S18>
+              <SocialsIcon
+                href='hhttps://github.com/alexandriaroberts/bitcoin-acadamy'
+                xlinkHref='../images/sprite.svg#github'
+                title='Github'
+              />
+            </div>
+          </ProjectCard>
+          <ProjectCard
             href='https://web3-wallet-dashboard-seven.vercel.app/'
             image='../projects/dashboard.png'
             alt='showing screenshot of display nfts app'
@@ -71,6 +103,14 @@ export default function Projects() {
               <Tag>Viem</Tag>
               <Tag>Alchemy SDK</Tag>
               <Tag>MetaMask</Tag>
+            </div>
+            <div sx={{ display: 'flex', mt: '16px' }}>
+              <S18>Link to Code here: </S18>
+              <SocialsIcon
+                href='https://github.com/alexandriaroberts/web3-wallet-dashboard'
+                xlinkHref='../images/sprite.svg#github'
+                title='Github'
+              />
             </div>
           </ProjectCard>
           <ProjectCard
