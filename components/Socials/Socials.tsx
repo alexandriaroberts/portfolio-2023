@@ -48,17 +48,6 @@ export const Socials = ({
     </a>
 
     <a
-      href='mailto:iamlexieonearth@gmail.com'
-      target='_blank'
-      rel='noopener noreferrer'
-    >
-      <svg viewBox='0 0 13 14'>
-        <title>Email</title>
-        <use xlinkHref='../images/sprite.svg#email'></use>
-      </svg>
-    </a>
-
-    <a
       href='https://twitter.com/iamlexieonearth'
       target='_blank'
       rel='noopener noreferrer'
