@@ -8,7 +8,7 @@ const defaultSEO = {
     locale: 'en_UK',
     images: [
       {
-        url: 'https://res.cloudinary.com/dv3lue3qa/image/upload/v1684893239/profile.jpg',
+        url: 'https://res.cloudinary.com/dv3lue3qa/image/upload/v1748754759/67ac51f3a38226946300b9dd-HeadshotPro_1_wzg6ts.png',
         alt: 'Alexandria Roberts',
       },
     ],
